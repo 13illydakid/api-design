@@ -4,15 +4,10 @@ const config = require('./index');
 module.exports = {
   development: {
     storage: config.dbFile,
-    dialect: "postgres",
+    dialect: "sqlite",
     seederStorage: "sequelize",
     logQueryParameters: true,
-    typeValidation: true,
-    username: "postgres",
-    password: "billyjr123",
-    database: 'postgres',
-    host: "localhost",
-    port: 5432,
+    typeValidation: true
   },
   production: {
     use_env_variable: 'DATABASE_URL',

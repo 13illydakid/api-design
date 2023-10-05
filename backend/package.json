@@ -7,7 +7,7 @@
     "sequelize": "sequelize",
     "sequelize-cli": "sequelize-cli",
     "start": "per-env",
-    "start:development": "npm run sequelize db:seed:undo:all && npm run sequelize db:migrate:undo:all && npm run sequelize db:migrate && npm run sequelize db:seed:all && nodemon ./bin/www",
+    "start:development": "nodemon ./bin/www",
     "start:production": "node ./bin/www",
     "build": "node psql-setup-script.js"
   },
@@ -34,6 +34,7 @@
   },
   "devDependencies": {
     "dotenv-cli": "^7.0.0",
-    "nodemon": "^2.0.20"
+    "nodemon": "^2.0.20",
+    "sqlite3": "^5.1.4"
   }
 }
