@@ -1,5 +1,7 @@
 const express = require('express');
 require('express-async-errors');
+import dotenv from 'dotenv';
+import config from 'config';
 const morgan = require('morgan');
 const cors = require('cors');
 const csurf = require('csurf');
