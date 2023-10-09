@@ -6,7 +6,7 @@
   "scripts": {
     "sequelize": "sequelize",
     "sequelize-cli": "sequelize-cli",
-    "start": "node ./bin/www",
+    "start": "per-env",
     "start:development": "nodemon ./bin/www",
     "start:production": "node ./bin/www",
     "build": "node psql-setup-script.js"
@@ -37,6 +37,6 @@
   "devDependencies": {
     "dotenv-cli": "^7.0.0",
     "nodemon": "^2.0.20",
-    "sqlite3": "^5.1.4"
+    "postgres": "^3.3.5"
   }
 }
