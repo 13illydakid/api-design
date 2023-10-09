@@ -18,10 +18,10 @@ function App() {
   const [message, setMessage] = useState("");
 
   useEffect(() => {
-    fetch(`https://api-design-63mg.onrender.com/${message}`)
+    fetch("https://api-design-63mg.onrender.com/message")
       .then((res) => res.json())
       .then((data) => setMessage(data.message));
-  }, [message]);
+  }, []);
 
   useEffect(() => {
     dispatch(sessionActions.restoreUser()).then(() => setIsLoaded(true));
