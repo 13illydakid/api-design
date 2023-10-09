@@ -3,6 +3,7 @@
 
 
 
+require('dotenv').config();
 const { Pool } = require('pg');
 
 const pool = new Pool({
@@ -13,7 +14,6 @@ const pool = new Pool({
 });
 
 // Import environment variables
-// require('dotenv').config();
 
 // const { port } = require('../config');
 
