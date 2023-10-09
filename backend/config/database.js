@@ -1,7 +1,7 @@
 // backend/config/database.js
 const config = require('./index');
 
-const config = {
+module.exports = {
   development: {
     storage: config.dbFile,
     dialect: "sqlite",
@@ -24,5 +24,3 @@ const config = {
     }
   }
 };
-
-module.exports = config;
