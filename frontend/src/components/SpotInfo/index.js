@@ -41,8 +41,8 @@ function SpotInfo() {
 
 
     //USE THIS OR CODE BREAKS!!!
-    if(!Object.keys(spotInfo).length){
-        return(
+    if (!Object.keys(spotInfo).length) {
+        return (
             <i className="fa-solid fa-truck-ramp-box spot-info-loading">LOADING...</i>
         )
     }
@@ -66,21 +66,21 @@ function SpotInfo() {
         ]
 
 
-    if(spotInfo.SpotImages.length < 5){
-        if (!spotInfo.SpotImages[0].url){
-            spotInfo.SpotImages[0] = {url: defaultImages[0]};
+    if (spotInfo.SpotImages.length < 5) {
+        if (!spotInfo.SpotImages[0].url) {
+            spotInfo.SpotImages[0] = { url: defaultImages[0] };
         }
-        if (!spotInfo.SpotImages[1]){
-            spotInfo.SpotImages[1] = {url: defaultImages[1]};
+        if (!spotInfo.SpotImages[1]) {
+            spotInfo.SpotImages[1] = { url: defaultImages[1] };
         }
-        if (!spotInfo.SpotImages[2]){
-            spotInfo.SpotImages[2] = {url: defaultImages[2]};
+        if (!spotInfo.SpotImages[2]) {
+            spotInfo.SpotImages[2] = { url: defaultImages[2] };
         }
-        if (!spotInfo.SpotImages[3]){
-            spotInfo.SpotImages[3] = {url: defaultImages[3]};
+        if (!spotInfo.SpotImages[3]) {
+            spotInfo.SpotImages[3] = { url: defaultImages[3] };
         }
-        if (!spotInfo.SpotImages[4]){
-            spotInfo.SpotImages[4] = {url: defaultImages[4]};
+        if (!spotInfo.SpotImages[4]) {
+            spotInfo.SpotImages[4] = { url: defaultImages[4] };
         }
     }
 
@@ -100,7 +100,8 @@ function SpotInfo() {
                                 e.target.onerror = null;
                                 e.target.src = defaultImagesBackup[0];
                             }}
-                            alt={`${spotInfo.name}'s image unavailable`}>
+                            // alt={`${spot.name}'s photo unavailable`}>
+                            alt="">
                         </img>
                     </div>
                     <div className='small-images-container'>
@@ -111,7 +112,8 @@ function SpotInfo() {
                                 e.target.onerror = null;
                                 e.target.src = defaultImagesBackup[1];
                             }}
-                            alt={`${spotInfo.name}'s image unavailable`}>
+                            // alt={`${spot.name}'s photo unavailable`}>
+                            alt="">
                         </img>
                         <img
                             className='small-images'
@@ -145,22 +147,22 @@ function SpotInfo() {
                 <div className='host-info-reserve-container'>
 
                     <div className='host-info-container'>
-                            <h3>Hosted by {spotInfo.Owner.firstName} {spotInfo.Owner.lastName}</h3>
-                            <p>{spotInfo.description}</p>
+                        <h3>Hosted by {spotInfo.Owner.firstName} {spotInfo.Owner.lastName}</h3>
+                        <p>{spotInfo.description}</p>
                     </div>
-                        <div className='price-reserve-container'>
-                            <div className='price-rating-info'>
-                                <p><strong>${Number(spotInfo.price).toFixed(2)}</strong>/night</p>
-                                <p className='reserve-div-reviews'>
-                                    <i className="fa-solid fa-star  fa-xl"></i>
-                                    {spotInfo.numReviews === 1 && ` ${Number(spotInfo.avgStarRating).toFixed(1)} · ${spotInfo.numReviews} review`}
-                                    {spotInfo.numReviews > 1 && ` ${Number(spotInfo.avgStarRating).toFixed(1)} · ${spotInfo.numReviews} reviews`}
-                                    {spotInfo.numReviews === 0 ? ' New' : null}
-                                </p>
+                    <div className='price-reserve-container'>
+                        <div className='price-rating-info'>
+                            <p><strong>${Number(spotInfo.price).toFixed(2)}</strong>/night</p>
+                            <p className='reserve-div-reviews'>
+                                <i className="fa-solid fa-star  fa-xl"></i>
+                                {spotInfo.numReviews === 1 && ` ${Number(spotInfo.avgStarRating).toFixed(1)} · ${spotInfo.numReviews} review`}
+                                {spotInfo.numReviews > 1 && ` ${Number(spotInfo.avgStarRating).toFixed(1)} · ${spotInfo.numReviews} reviews`}
+                                {spotInfo.numReviews === 0 ? ' New' : null}
+                            </p>
                         </div>
-                    <div className='reserve-container' onClick={reserveClick}>
+                        <div className='reserve-container' onClick={reserveClick}>
                             <button className='reserve-button'>RESERVE</button>
-                    </div>
+                        </div>
 
                     </div>
                 </div>
@@ -176,32 +178,32 @@ function SpotInfo() {
                 </div>
                 {currentUser && spotInfo.Owner.id !== currentUser.id && !allReviewsUserIdsArray.includes(currentUser.id) && (
                     // <div className='post-review-button'>
-                        <OpenModalMenuItem
-                            itemText="Post Your Review"
-                            modalComponent={<CreateReviewModal spotId={spotId}/>}
-                        />
+                    <OpenModalMenuItem
+                        itemText="Post Your Review"
+                        modalComponent={<CreateReviewModal spotId={spotId} />}
+                    />
                     // </div>
-                    )
+                )
                 }
-                    <div  className="review-info-section">
-                        {allSpotReviewsArray.length !== 0 && allSpotReviewsArray.map(review =>
-                            <div key={review.id} className='review-info-container'>
-                                <p className='review-username'>{review.User.firstName}</p>
-                                <p className='review-date'>{months[Number(review.createdAt.split('-')[1]-1)]} {review.createdAt.split('-')[0]}</p>
-                                <p className='review-content'>{review.review}</p>
+                <div className="review-info-section">
+                    {allSpotReviewsArray.length !== 0 && allSpotReviewsArray.map(review =>
+                        <div key={review.id} className='review-info-container'>
+                            <p className='review-username'>{review.User.firstName}</p>
+                            <p className='review-date'>{months[Number(review.createdAt.split('-')[1] - 1)]} {review.createdAt.split('-')[0]}</p>
+                            <p className='review-content'>{review.review}</p>
 
-                                {review.User.id === currentUser?.id  &&
-                                    // <div className='delete-review-button'>
-                                        <OpenModalMenuItem
-                                            itemText='Delete'
-                                            modalComponent={<ConfirmDeleteReviewModal reviewId={review.id} spotId={spotId} />}
-                                        />
+                            {review.User.id === currentUser?.id &&
+                                // <div className='delete-review-button'>
+                                <OpenModalMenuItem
+                                    itemText='Delete'
+                                    modalComponent={<ConfirmDeleteReviewModal reviewId={review.id} spotId={spotId} />}
+                                />
 
-                                    // </div>
-                                }
-                            </div>
-                        )}
-                    </div>
+                                // </div>
+                            }
+                        </div>
+                    )}
+                </div>
                 {allSpotReviewsArray.length === 0 && currentUser && spotInfo.Owner.id !== currentUser.id && (
                     <div className='first-review-message'>Be the first to post a review!</div>
                 )}

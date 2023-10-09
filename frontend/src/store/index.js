@@ -1,6 +1,6 @@
 // frontend/src/store/index.js
 
-import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
+import { legacy_createStore, combineReducers, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
 import sessionReducer from './session';
 import spotsReducer from './spots';
@@ -25,7 +25,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 const configureStore = (preloadedState) => {
-    return createStore(rootReducer, preloadedState, enhancer);
+    return legacy_createStore(rootReducer, preloadedState, enhancer);
   };
 
 

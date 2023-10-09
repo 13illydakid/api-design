@@ -43,7 +43,8 @@ function AllSpots() {
                             e.target.onerror = null;
                             e.target.src = "https://st3.depositphotos.com/26272052/33085/v/600/depositphotos_330852614-stock-illustration-color-delete-folder-icon-isolated.jpg"
                         }}
-                        alt={`${spot.name}'s photo unavailable`}>
+                        // alt={`${spot.name}'s photo unavailable`}>
+                        alt="">
                     </img>
                 </div>
                 {/* <p className="spot-info">

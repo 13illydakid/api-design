@@ -1,13 +1,12 @@
 // frontend/src/index.js
 import React from 'react';
-
-import './index.css';
-
 import ReactDOM from 'react-dom';
+import './index.css';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 import { ModalProvider, Modal } from './context/Modal';
 import App from './App';
+import { disableReactDevTools } from '@fvilers/disable-react-devtools';
 
 import configureStore from './store';
 import { restoreCSRF, csrfFetch } from "./store/csrf";
@@ -21,6 +20,8 @@ if (process.env.NODE_ENV !== "production") {
   window.csrfFetch = csrfFetch;
   window.store = store;
   window.sessionActions = sessionActions;
+} else {
+  disableReactDevTools();
 }
 
 // Wrap the application with the Modal provider and render the Modal component
