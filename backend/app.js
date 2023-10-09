@@ -10,7 +10,6 @@ const { ValidationError } = require('sequelize');
 const { environment } = require('./config');
 const isProduction = environment === 'production';
 
-const routes = require('./routes');
 
 const app = express();
 
@@ -45,6 +44,7 @@ app.use(
   })
 );
 
+const routes = require('./routes');
 app.use(routes); // Connect all the routes
 
 // Catch unhandled requests and forward to error handler.
@@ -77,7 +77,7 @@ app.use((err, _req, res, _next) => {
   res.json({
     title: err.title || 'Server Error',
     message: err.message,
-    statusCode: err.status,
+    // statusCode: err.status,
     errors: err.errors,
     stack: isProduction ? null : err.stack
   });
