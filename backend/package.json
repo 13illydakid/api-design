@@ -6,10 +6,10 @@
   "scripts": {
     "sequelize": "sequelize",
     "sequelize-cli": "sequelize-cli",
-    "start": "per-env",
+    "start": "npm start --prefix backend",
     "start:development": "nodemon ./bin/www",
     "start:production": "node ./bin/www",
-    "build": "npm run build --prefix backend"
+    "build": "node psql-setup-script.js"
   },
   "keywords": [],
   "author": "",
