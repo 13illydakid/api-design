@@ -1,8 +1,8 @@
 import { configureStore as legacy_createStore } from '@reduxjs/toolkit';
 import { applyMiddleware } from 'redux'
 import thunkMiddleware from 'redux-thunk'
-// import { composeWithDevTools } from 'redux-devtools-extension'
-import { compose } from "redux";
+import { composeWithDevTools } from 'redux-devtools-extension'
+// import { compose } from "redux";
 
 import monitorReducersEnhancer from './enhancers/monitorReducers'
 import loggerMiddleware from './middleware/logger'
@@ -13,8 +13,8 @@ export default function configureStore(preloadedState) {
   const middlewareEnhancer = applyMiddleware(...middlewares)
 
   const enhancers = [middlewareEnhancer, monitorReducersEnhancer]
-  //const composedEnhancers = composeWithDevTools(...enhancers)
-  const composedEnhancers = compose(...enhancers)
+  const composedEnhancers = composeWithDevTools(...enhancers)
+  // const composedEnhancers = compose(...enhancers)
 
   const store = legacy_createStore(rootReducer, preloadedState, composedEnhancers)
 

@@ -6,7 +6,7 @@ import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 import { ModalProvider, Modal } from './context/Modal';
 import App from './App';
-import { disableReactDevTools } from '@fvilers/disable-react-devtools';
+// import { disableReactDevTools } from '@fvilers/disable-react-devtools';
 
 import configureStore from './store';
 import { restoreCSRF, csrfFetch } from "./store/csrf";
@@ -20,9 +20,10 @@ if (process.env.NODE_ENV !== "production") {
   window.csrfFetch = csrfFetch;
   window.store = store;
   window.sessionActions = sessionActions;
-} else {
-  disableReactDevTools();
 }
+//  else {
+//   disableReactDevTools();
+// }
 
 // Wrap the application with the Modal provider and render the Modal component
 // after the App component so that all the Modal content will be layered as
