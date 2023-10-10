@@ -11,9 +11,9 @@ module.exports = {
   //   username: "default",
   //   password: "XBy6wI9ibYcH",
   //   database: "verceldb",
-  //   host: "localhost",
-  //   // host: "ep-bitter-feather-72486321-pooler.us-west-2.postgres.vercel-storage.com",
-  //   port: 3000,
+  //   // host: "localhost",
+  //   host: "ep-bitter-feather-72486321-pooler.us-west-2.postgres.vercel-storage.com",
+  //   port: 5432,
   //   dialectOptions: {
   //     ssl: {
   //       require: true,
