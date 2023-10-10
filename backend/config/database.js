@@ -3,12 +3,33 @@ const config = require('./index');
 
 module.exports = {
   development: {
+    // use_env_variable: 'DATABASE_URL',
     storage: config.dbFile,
-    dialect: "postgres",
-    seederStorage: "sequelize",
-    logQueryParameters: true,
-    typeValidation: true,
+    // use_env_variable: process.env.DATABASE_URL,
+    dialect: 'postgres',
+    seederStorage: 'sequelize',
+    username: "default",
+    password: "XBy6wI9ibYcH",
+    database: "verceldb",
+    host: "ep-bitter-feather-72486321-pooler.us-west-2.postgres.vercel-storage.com",
+    port: 5432,
+    dialectOptions: {
+      ssl: {
+        require: true,
+        rejectUnauthorized: false
+      }
+    },
+    define: {
+      schema: "public"
+    }
   },
+  // development: {
+  //   storage: config.dbFile,
+  //   dialect: "postgres",
+  //   seederStorage: "sequelize",
+  //   logQueryParameters: true,
+  //   typeValidation: true,
+  // },
   // development: {
   //   storage: config.dbFile,
   //   dialect: "postgres",
