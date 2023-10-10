@@ -1,6 +1,6 @@
 .spot-info-loading{
     display: flex;
-    color: orange;
+    color: lightgreen;
     margin-left: 50%;
     margin-right: 50%;
     justify-content: center;
@@ -84,7 +84,7 @@
     display: flex;
     text-align: left;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color: navy;
+    color: rgb(110, 110, 124);
     /* width: 200px; */
     overflow-wrap: break-word;
     width: max-content;
@@ -93,6 +93,6 @@
 }
 
 .fa-xl{
-    color: gold;
+    color: lightgray;
     align-items: center;
 }
