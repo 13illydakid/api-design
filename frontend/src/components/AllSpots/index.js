@@ -36,6 +36,9 @@ function AllSpots() {
         <NavLink to={`/spots/${spot.id}`} key={spot.id} className="spot-container">
             <div title={spot.name} className="spot-info-container">
                 <div className='spot-image-container'>
+                    <div className="mini-title">
+                    <h2>{spot.name}</h2>
+                    </div>
                     <img
                         className="all-spots-image"
                         src={generatePreviewImage(spot.previewImage)}

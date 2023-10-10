@@ -27,7 +27,7 @@ module.exports = {
         country: 'United States',
         lat: 11.11,
         lng: 11.11,
-        name: 'SeederDataName1',
+        name: 'UC Irvine',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
         price: 111,
       },
@@ -39,7 +39,7 @@ module.exports = {
         country: 'United States',
         lat: 22.22,
         lng: 22.22,
-        name: 'SeederDataName2',
+        name: 'UC Merced',
         description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.',
         price: 222,
       },
@@ -51,7 +51,7 @@ module.exports = {
         country: 'United States',
         lat: 33.33,
         lng: 33.33,
-        name: 'SeederDataName3',
+        name: 'UC Santa Cruz',
         description: 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.',
         price: 333.333,
       },
@@ -63,7 +63,7 @@ module.exports = {
         country: 'United States',
         lat: 44.44,
         lng: 44.44,
-        name: 'SeederDataName4',
+        name: 'UC Riverside',
         description: 'Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.',
         price: 444,
       },
@@ -75,7 +75,7 @@ module.exports = {
         country: 'United States',
         lat: 55.55,
         lng: 55.55,
-        name: 'SeederDataName5',
+        name: 'UC Santa Barbara',
         description: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.',
         price: 555,
       },
@@ -87,7 +87,7 @@ module.exports = {
         country: 'United States',
         lat: 77.77,
         lng: 77.77,
-        name: 'NoReviewsTester',
+        name: 'UCLA',
         description: 'Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.',
         price: 777,
       },
@@ -99,10 +99,34 @@ module.exports = {
         country: 'United States',
         lat: 88.88,
         lng: 88.88,
-        name: 'TextOverflowTesterSeederName',
+        name: 'UC Berkeley',
         description: 'Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.',
         price: 888.88,
-      }
+      },
+      {
+        ownerId: 3,
+        address: '8 SeederDataStreet8',
+        city: 'SeederDataCity8',
+        state: 'SeederDataState8',
+        country: 'United States',
+        lat: 88.88,
+        lng: 88.88,
+        name: 'UC Davis',
+        description: 'Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.',
+        price: 888.88,
+      },
+      {
+        ownerId: 3,
+        address: '8 SeederDataStreet8',
+        city: 'SeederDataCity8',
+        state: 'SeederDataState8',
+        country: 'United States',
+        lat: 88.88,
+        lng: 88.88,
+        name: 'UC San Diego',
+        description: 'Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.',
+        price: 888.88,
+      },
     ], {});
 
   },
@@ -117,7 +141,7 @@ module.exports = {
     options.tableName = 'Spots'
     const Op = Sequelize.Op;
     return queryInterface.bulkDelete(options, {
-      country: { [Op.in]: ['United States'] }
+      ownerId: { [Op.in]: [1, 2, 3] }
     }, {});
   }
 };

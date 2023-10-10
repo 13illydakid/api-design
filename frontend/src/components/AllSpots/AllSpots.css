@@ -57,6 +57,10 @@
     align-items: center;
 }
 
+.mini-title {
+    padding: 5px;
+}
+
 .all-spots-image{
     width: 293px;
     height: 293px;

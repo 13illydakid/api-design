@@ -21,150 +21,354 @@ module.exports = {
     return queryInterface.bulkInsert(options, [
       {
         spotId: 1,
-        url: "https://images.unsplash.com/photo-1601701119495-d6e39b664001?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80",
+        url: "https://flic.kr/p/28TUa6u",
         preview: true
       },
       {
         spotId: 1,
-        url: "https://images.unsplash.com/photo-1590523277543-a94d2e4eb00b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2532&q=80",
+        url: "https://flic.kr/p/2aK5aj9",
         preview: false
       },
       {
         spotId: 1,
-        url: "https://images.unsplash.com/photo-1562790351-d273a961e0e9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1065&q=80",
+        url: "https://flic.kr/p/24ZWuui",
         preview: false
       },
       {
         spotId: 1,
-        url: "https://images.unsplash.com/photo-1578898886615-0c4719f932dc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
+        url: "https://flic.kr/p/Fm7H1F",
         preview: false
       },
       {
         spotId: 1,
-        url: "https://images.unsplash.com/photo-1596948209610-c566ee564ea2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80",
+        url: "https://flic.kr/p/22h1JjS",
+        preview: false
+      },
+      {
+        spotId: 1,
+        url: "https://flic.kr/p/2dHcuuD",
+        preview: false
+      },
+      {
+        spotId: 1,
+        url: "https://flic.kr/p/RzpcjL",
         preview: false
       },
       {
         spotId: 2,
-        url: "https://images.unsplash.com/photo-1556715371-bdb0d523c870?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=327&q=80",
+        url: "https://housing.ucmerced.edu/sites/housing.ucmerced.edu/files/images/apatments_elportal_201216-16.jpeg",
         preview: true
       },
       {
         spotId: 2,
-        url: "https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80",
+        url: "https://www.davisvanguard.org/wp-content/uploads/2018/03/UCD-Student-Housing-1-of-5-e1520021463561.jpg",
         preview: false
       },
       {
         spotId: 2,
-        url: "https://images.unsplash.com/photo-1552858725-a19e7fcd3ac4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+        url: "https://housing.ucmerced.edu/sites/housing.ucmerced.edu/files/images/Dorms/valley_terraces_11zon.jpeg",
         preview: false
       },
       {
         spotId: 2,
-        url: "https://images.unsplash.com/photo-1589785277274-59448e840ac7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80",
+        url: "https://housing.ucmerced.edu/sites/housing.ucmerced.edu/files/page/images/bunkloft.png",
         preview: false
       },
       {
         spotId: 2,
-        url: "https://images.unsplash.com/photo-1587870306141-4f19861e6c73?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=415&q=80",
+        url: "https://housing.ucmerced.edu/sites/housing.ucmerced.edu/files/page/images/daden.png",
+        preview: false
+      },
+      {
+        spotId: 2,
+        url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/UCMDorms.JPG/1024px-UCMDorms.JPG",
         preview: false
       },
       {
         spotId: 3,
-        url: "https://images.unsplash.com/photo-1523699289804-55347c09047d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
+        url: "https://housing.ucsc.edu/tours/cowell/images/cowell-triple-photo.jpg",
         preview: true
       },
       {
         spotId: 3,
-        url: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        url: "https://swinerton.com/wp-content/uploads/2019/02/UCSC-2-1030x686.jpg",
         preview: false
       },
       {
         spotId: 3,
-        url: "https://images.unsplash.com/photo-1541435469116-8ce8ccc4ff85?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1147&q=80",
+        url: "https://oakes.ucsc.edu/residential-life/dsc_0385---underdome.jpg",
         preview: false
       },
       {
         spotId: 3,
-        url: "https://images.unsplash.com/photo-1592494804071-faea15d93a8a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+        url: "https://sp-ao.shortpixel.ai/client/to_auto,q_lossy,ret_img,w_1200,h_768/https://dcifurn.com/wp-content/uploads/2018/05/UCSC_porter2.jpg",
         preview: false
       },
       {
         spotId: 3,
-        url: "https://images.unsplash.com/photo-1561650714-78e93169ac7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80",
+        url: "https://www.crown.edu/wp-content/uploads/2020/10/lower_miller-2.jpg",
         preview: false
       },
       {
         spotId: 4,
-        url: "https://images.unsplash.com/photo-1554647286-f365d7defc2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+        url: "https://admissions.ucr.edu/sites/default/files/2021-06/ucr_on-campus-housing-still-available-for-fall-2021_blog.jpghttps://hospitality.ucr.edu/sites/default/files/header-apartment_0.jpg",
         preview: true
       },
       {
         spotId: 4,
-        url: "https://images.unsplash.com/photo-1549294413-26f195200c16?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80",
-
+        url: "https://housing.ucr.edu/sites/default/files/styles/cta_image_small/public/reshall-pentland-hills_1.jpg?h=ab622562&itok=yhOg4X8d",
         preview: false
       },
       {
         spotId: 4,
-        url: "https://images.unsplash.com/photo-1592229505726-ca121723b8ef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80",
+        url: "https://ucr-iv.com/wp-content/uploads/2015/07/IMG_82141.jpg",
         preview: false
       },
       {
         spotId: 4,
-        url: "https://images.unsplash.com/photo-1519690889869-e705e59f72e1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        url: "https://www.vpix.net/uploads/panos/aberdeeninverness457189/slides/1469488960.jpg",
         preview: false
       },
       {
         spotId: 4,
-        url: "https://images.unsplash.com/photo-1554009975-d74653b879f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=327&q=80",
+        url: "https://www.vpix.net/uploads/panos/lothian457204/slides/1469488776.jpg",
+        preview: false
+      },
+      {
+        spotId: 4,
+        url: "https://www.vpix.net/uploads/panos/pentlandhills457202/slides/1469489194.jpg",
+        preview: false
+      },
+      {
+        spotId: 4,
+        url: "https://hospitality.ucr.edu/sites/default/files/header-apartment_0.jpg",
         preview: false
       },
       {
         spotId: 5,
-        url: "https://images.unsplash.com/photo-1564574685150-74a84d02d695?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=696&q=80",
+        url: "https://sp-ao.shortpixel.ai/client/to_auto,q_lossy,ret_img,w_1200,h_680/https://dcifurn.com/wp-content/uploads/2018/09/DCI-Furniture-solid-hardwood-for-dorms.jpg",
         preview: true
       },
       {
         spotId: 5,
-        url: "https://images.unsplash.com/photo-1631049035634-c04c637651b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+        url: "https://images.shiksha.com/mediadata/images/1536650470phpiDMvi9.jpeg",
         preview: false
       },
       {
         spotId: 5,
-        url: "https://images.unsplash.com/photo-1587874522487-fe10e954d035?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+        url: "https://glittermagazine.co/wp-content/uploads/2021/11/Dorm-room-social-lead.jpg",
         preview: false
       },
       {
         spotId: 5,
-        url: "https://images.unsplash.com/photo-1524517902888-6d6a40490ec4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80",
+        url: "https://i.pinimg.com/originals/01/a5/c7/01a5c74b38146b276e3f55b2f33420eb.jpg",
         preview: false
       },
       {
         spotId: 5,
-        url: "https://images.unsplash.com/photo-1533759413974-9e15f3b745ac?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80",
+        url: "https://ashleyvance.com/wp-content/uploads/2012/11/IMG_6367.jpg",
+        preview: false
+      },
+      {
+        spotId: 5,
+        url: "https://dailynexus.s3-us-west-1.amazonaws.com/dailynexus/wp-content/uploads/2019/05/Dorms_Ida-Kazerani_ONLINE.jpg",
         preview: false
       },
       {
         spotId: 6,
-        url: "https://images.unsplash.com/photo-1546519393-754ec8cafd47?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+        url: "https://studios.imgix.net/img/gallery-images/assets/uploads/UCLA_Landfair_3_Column_Kitchen.jpg?q=80",
         preview: true
       },
       {
-        spotId: 7,
-        url: "https://plus.unsplash.com/premium_photo-1678286770812-c3d9de1d8892?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-        preview: true
+        spotId: 6,
+        url: "https://studios.imgix.net/img/gallery-images/assets/uploads/UCLA_Landfair_3_Column_Living_Room.jpg?q=80",
+        preview: false
       },
       {
-        spotId: 7,
-        url: "https://plus.unsplash.com/premium_photo-1678286769593-b60aff39f02d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+        spotId: 6,
+        url: "https://portal.housing.ucla.edu/sites/default/files/styles/sf_hero_banner_bg/public/media/images/suites-hero.jpg?h=e459f0e1&itok=rL0zlJAZ",
+        preview: false
+      },
+      {
+        spotId: 6,
+        url: "https://architizer-prod.imgix.net/media/145944651580412046_000_N17_medium1.jpg?w=1680&q=60&auto=format,compress&cs=strip",
+        preview: false
+      },
+      {
+        spotId: 6,
+        url: "https://mithun.com/wp-content/uploads/2023/07/D05859_02_N14-1.jpg",
+        preview: false
+      },
+      {
+        spotId: 6,
+        url: "https://d31gnh3j8cblbd.uloop.com/o25YFY4mQR9zDABSu5svQw%3D%3D/1446ab69/UCLA-Housing-430-Kelton-for-UCLA-Students-in-Los-Angeles-CA.jpg",
+        preview: false
+      },
+      {
+        spotId: 6,
+        url: "https://www.davisvanguard.org/wp-content/uploads/2021/04/ucla-housing-765x510.jpg",
+        preview: false
+      },
+      {
+        spotId: 6,
+        url: "https://www.davisvanguard.org/wp-content/uploads/2021/04/ucla-housing-765x510.jpg",
+        preview: false
+      },
+      {
+        spotId: 6,
+        url: "https://64.media.tumblr.com/c344efdeed13c157c3ade73a603199fc/tumblr_inline_p7h5q0riqc1qk0tuu_500.png",
+        preview: false
+      },
+      {
+        spotId: 6,
+        url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Hedrick_Summit.JPG/1200px-Hedrick_Summit.JPG",
         preview: false
       },
       {
         spotId: 7,
-        url: "https://images.unsplash.com/photo-1561409037-c7be81613c1f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80",
+        url: "https://live-wp-sa-housing-1.pantheon.berkeley.edu/wp-content/uploads/20190818_134307-750px-700x500.jpg",
+        preview: true
+      },
+      {
+        spotId: 7,
+        url: "https://housing.berkeley.edu/wp-content/uploads/20230222_VirtualTourDay2_bhs_060-750px-700x500.jpg",
         preview: false
-      }
+      },
+      {
+        spotId: 7,
+        url: "https://housing.berkeley.edu/wp-content/uploads/2019_04_19_UCB_Housing_day2-11-400x267-1.jpg",
+        preview: false
+      },
+      {
+        spotId: 7,
+        url: "https://theardmoregroup.com/wp-content/uploads/2020/11/double-room-berkeley-university-aspect-ratio-1066-1066-1066x1066.jpg",
+        preview: false
+      },
+      {
+        spotId: 7,
+        url: "https://assets2.unilodgers.com/cdn-cgi/image/width=400,height=400,dpr=1,quality=70,format=auto/uploads/property/The-Berk-Berkeley-CA-Bedroom-With-Study-Desk-Unilodgers.jpg",
+        preview: false
+      },
+      {
+        spotId: 7,
+        url: "https://i.insider.com/5f5b8301e6ff30001d4e8451?width=1000&format=jpeg&auto=webp",
+        preview: false
+      },
+      {
+        spotId: 7,
+        url: "https://dailycal.org/wp-content/uploads/2023/04/tuition_William-Yau_staff.jpg",
+        preview: false
+      },
+      {
+        spotId: 7,
+        url: "https://www.tutorperini.com/media/2749/ucb-res-bedroomb.jpg",
+        preview: false
+      },
+      {
+        spotId: 8,
+        url: "https://housing.ucdavis.edu/_images/buildings/slide_shows/thoreau1.jpg",
+        preview: true
+      },
+      {
+        spotId: 8,
+        url: "https://housing.ucdavis.edu/_images/buildings/slide_shows/alder1.jpg",
+        preview: false
+      },
+      {
+        spotId: 8,
+        url: "https://scontent-lax3-1.xx.fbcdn.net/v/t39.30808-6/366964497_988766842448213_6846804878532224267_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=49d041&_nc_ohc=ZzGvgil0sCUAX9b-MHx&_nc_ht=scontent-lax3-1.xx&cb_e2o_trans=t&oh=00_AfC5h5mx7-bB3n5xS8fxyXIbbNCD8-1J18nZY6PWCESevw&oe=6529D354",
+        preview: false
+      },
+      {
+        spotId: 8,
+        url: "https://scontent-lax3-1.xx.fbcdn.net/v/t1.6435-9/194870949_10159517476778586_3712314757689835649_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=2c4854&_nc_ohc=8gdPNqBwoxoAX-gHiBD&_nc_ht=scontent-lax3-1.xx&cb_e2o_trans=t&oh=00_AfAxzoYPCqhgypPgb7R2px5WNDB9weWgyplnRYhuqe1zZQ&oe=654C8140",
+        preview: false
+      },
+      {
+        spotId: 8,
+        url: "https://scontent-lax3-2.xx.fbcdn.net/v/t1.6435-9/138632171_10159162969173586_7199307044000136675_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=2c4854&_nc_ohc=7AsiJvSSZuwAX_2rtCS&_nc_ht=scontent-lax3-2.xx&cb_e2o_trans=t&oh=00_AfDcRtk-G55kJvaxlU0DoAvb4GMFhGffPd3i0mrfrkQltA&oe=654CB30F",
+        preview: false
+      },
+      {
+        spotId: 8,
+        url: "https://scontent-lax3-1.xx.fbcdn.net/v/t39.30808-6/365982507_988766959114868_1269864165253683414_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=49d041&_nc_ohc=Sd-kgRvxUq0AX9vVaC5&_nc_ht=scontent-lax3-1.xx&cb_e2o_trans=t&oh=00_AfBwSvg3kLNnU9EAJvOww_ZnOWwwyMYeNxFIHAFc4dt1ug&oe=652AD3C8",
+        preview: false
+      },
+      {
+        spotId: 8,
+        url: "https://scontent-lax3-2.xx.fbcdn.net/v/t39.30808-6/309722889_766989031292663_1819876468365579357_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=49d041&_nc_ohc=m2OlSzzjmdgAX_e7GjT&_nc_ht=scontent-lax3-2.xx&cb_e2o_trans=t&oh=00_AfDB67VpS12jEw92DXsqt88P38chwM8-QWaCm4V7SOsoSA&oe=65299BF6",
+        preview: false
+      },
+      {
+        spotId: 8,
+        url: "https://scontent-lax3-1.xx.fbcdn.net/v/t39.30808-6/366817365_988766942448203_384411908927400233_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=49d041&_nc_ohc=gOvm6uL00rIAX9VraIc&_nc_ht=scontent-lax3-1.xx&cb_e2o_trans=t&oh=00_AfBkcsiUIXUG2ztm763vLhzf4eyI95TLgtYnkI871f_HrA&oe=652A1E93",
+        preview: false
+      },
+      {
+        spotId: 9,
+        url: "https://mithun.com/wp-content/uploads/2023/07/1425800_N96-1.jpg",
+        preview: true
+      },
+      {
+        spotId: 9,
+        url: "https://ihouse.ucsd.edu/_images/living/ug-eap-slideshow/18-townhouse-living-room2.png",
+        preview: false
+      },
+      {
+        spotId: 9,
+        url: "https://lifeofwry.files.wordpress.com/2016/09/img_4807.jpg",
+        preview: false
+      },
+      {
+        spotId: 9,
+        url: "https://scontent-lax3-2.xx.fbcdn.net/v/t1.18169-9/543826_10153246293150068_447989620_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=cdbe9c&_nc_ohc=KdR-Kq_e0XIAX9GhDIs&_nc_ht=scontent-lax3-2.xx&cb_e2o_trans=t&oh=00_AfCwOTfXo244aRsjL3mwSLsLYz0ATh8H395ny-lFkskXnA&oe=654C8EF9",
+        preview: false
+      },
+      {
+        spotId: 9,
+        url: "https://swinerton.com/wp-content/uploads/2019/02/JDZ2884a-1030x668.jpg",
+        preview: false
+      },
+      {
+        spotId: 9,
+        url: "https://ihouse.ucsd.edu/_images/living/scholars-vsr-slideshow/living-kitchen.jpg",
+        preview: false
+      },
+      {
+        spotId: 9,
+        url: "https://www.sgh.com/wp-content/uploads/2022/09/178109_00_UCSD_N7_lrg.jpg",
+        preview: false
+      },
+      {
+        spotId: 9,
+        url: "https://muir.ucsd.edu/_images/ResHallTour_cover.jpg",
+        preview: false
+      },
+      {
+        spotId: 9,
+        url: "https://www.safdierabines.com/wp-content/uploads/2017/06/Eleanor-3.jpg",
+        preview: false
+      },
+      {
+        spotId: 9,
+        url: "https://b1379941.smushcdn.com/1379941/wp-content/uploads/2019/04/UCSD-Eleanor-Roosevelt-College-Student-Housing-002.png?lossy=0&strip=1&webp=1",
+        preview: false
+      },
+      {
+        spotId: 9,
+        url: "https://roosevelt.ucsd.edu/_images/ERC-Green1.jpg",
+        preview: false
+      },
+      {
+        spotId: 9,
+        url: "https://gw-advance-prod-us-east-1-system.s3.amazonaws.com/uploads/campaign/logo/641e1b740ad91d205bc34680/2a2f3be1-341d-4c2b-acbf-68662d438f98.jpeg",
+        preview: false
+      },
+      {
+        spotId: 9,
+        url: "https://ihouse.ucsd.edu/_images/homepage/cta-living.jpg",
+        preview: false
+      },
     ], {});
   },
 
@@ -178,7 +382,7 @@ module.exports = {
     options.tableName = 'SpotImages'
     const Op = Sequelize.Op;
     return queryInterface.bulkDelete(options, {
-      spotId: { [Op.in]: [1, 2, 3, 4, 5, 6, 7] }
+      spotId: { [Op.in]: [1, 2, 3, 4, 5, 6, 7, 8, 9] }
     }, {});
   }
 };

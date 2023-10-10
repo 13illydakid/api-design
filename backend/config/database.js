@@ -41,7 +41,7 @@ module.exports = {
     password: "billyjr123",
     database: 'postgres',
     host: "localhost",
-    port: 3000,
+    port: 5432,
   },
   // production: {
   //   use_env_variable: 'DATABASE_URL',
