@@ -1,4 +1,4 @@
-.manage-create-spot-container{
+/* .manage-create-spot-container{
     padding-left: 53px;
 }
 
@@ -14,16 +14,6 @@
 }
 
 .manage-spots-heading{
-    /* font-family:Verdana, Geneva, Tahoma, sans-serif;
-    justify-content: left;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 233px);
-    gap: 31px;
-    padding-top: 33px;
-    justify-content: center;
-    max-width: 1221px;
-    margin: auto;
-    color: navy; */
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 25px;
     justify-content: left;
@@ -70,19 +60,6 @@
 
 }
 
-/* .update-spot-button{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-    background-color: white;
-    color: navy;
-
-    border: solid 2px navy;
-    border-radius: 7px;
-    cursor: pointer;
-
-
-} */
-
 .update-spot-button{
     list-style-type: none;
     font-weight: bold;
@@ -92,7 +69,6 @@
     border-radius: 9px;
     width: max-content;
     cursor: pointer;
-    /* margin-top: 21px; */
     margin-bottom: 27px;
     box-shadow: 0px 0px 9px 3px rgba(0, 0, 0, 0.34);
     height: 30px;
@@ -105,20 +81,6 @@
     font-family:  'Circular', 'BlinkMacSystemFont', 'Roboto', 'Helvetica Neue', sans-serif;
 }
 
-/* .delete-spot-button{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-    background-color: white;
-    color: navy;
-
-    border: solid 2px navy;
-    border-radius: 7px;
-    list-style-type: none;
-    cursor: pointer;
-
-
-} */
-
 .update-spot-button:active{
     transform: scale(0.98);
     box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
@@ -129,4 +91,245 @@
     transform: scale(0.98);
     box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
 
-}
+} */
+
+.manage-create-spot-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .no-spots-heading {
+    margin-bottom: 24px;
+  }
+
+  .manage-spots-heading {
+    margin-bottom: 24px;
+  }
+
+  .manage-spots-text {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 1.25;
+    margin: 0;
+  }
+
+  .manage-create-spot {
+    background-color: #ff5a5f;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+
+  .manage-create-spot:hover {
+    background-color: #e60000;
+  }
+
+  .all-spots-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: white;
+  }
+
+  .spot-container {
+    width: 25%;
+    height: 25%;
+    margin: auto;
+    padding: 0px;
+    box-shadow: none;
+    background-color: white;
+    /* margin-bottom: 24px; */
+    justify-content:space-evenly;
+  }
+
+  .spot-info-container {
+    display:inline-flexbox;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 25%;
+    padding: 0px;
+    border-radius: 0px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    /* transition: box-shadow 0.2s ease-in-out; */
+  }
+
+  .spot-info-container:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.968);
+  }
+
+  .spot-image-container {
+    height:auto;
+    overflow: hidden;
+    border-radius: 0px;
+    color: white;
+  }
+
+  .all-spots-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .city-state-star-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+  }
+
+  .spot-info {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: inherit;
+    line-height: inherit;
+  }
+
+  .all-spots-price {
+    margin-top: 6px;
+    grid-column: 1 / -1;
+    box-sizing: border-box;
+    /* display: block; */
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.1875rem;
+    color: #222;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .price-night-text {
+    font-size: 0.9375rem;
+  }
+
+  .all-spots-rating {
+    color: #008489;
+  }
+
+  .update-delete-spot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+  }
+
+  .update-spot-button {
+    background-color: #fff;
+    color: #484848;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 4px;
+    border: 1px solid #d8d8d8;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+
+  .update-spot-button:hover {
+    background-color: #f7f7f7;
+  }
+
+  .manage-listings-modal {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .manage-listings-heading {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 24px;
+  }
+
+  .manage-listings-button {
+    background-color: #ff5a5f;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+
+  .manage-listings-button:hover {
+    background-color: #e60000;
+  }
+
+  .manage-listings-text {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+
+  .manage-listings-description {
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+
+  .manage-listings-checkbox-label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+
+  .manage-listings-checkbox {
+    margin-right: 8px;
+  }
+
+  .manage-listings-checkbox-text {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .manage-listings-buttons-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+  }
+
+  .manage-listings-buttons-inner-container {
+    width: 48%;
+  }
+
+  .manage-listings-cancel-button {
+    background-color: #fff;
+    color: #484848;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 4px;
+    border: 1px solid #d8d8d8;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+
+  .manage-listings-cancel-button:hover {
+    background-color: #f7f7f7;
+  }
+
+  .manage-listings-save-button {
+    background-color: #ff5a5f;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+
+  .manage-listings-save-button:hover {
+    background-color: #e60000;
+  }

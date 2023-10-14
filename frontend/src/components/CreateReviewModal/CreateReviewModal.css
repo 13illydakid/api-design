@@ -1,8 +1,6 @@
-.create-review-modal-container{
+/* .create-review-modal-container{
     display: grid;
     padding: 21px;
-    /* padding-left: 7px;
-    padding-right: 7px; */
     justify-items: center;
     font-family:  'Circular', 'BlinkMacSystemFont', 'Roboto', 'Helvetica Neue', sans-serif;
     font-weight: bolder;
@@ -97,4 +95,96 @@ color: darkgray;
     padding-left: 5px;
     font-size: smaller;
     margin-top: 17px;
+} */
+
+.create-review-modal-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.post-review-text {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.create-review-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.review-text-area {
+    border: 1px solid #d8d8d8;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 12px;
+    margin-bottom: 16px;
+    resize: vertical;
+    height: 200px;
+}
+
+.review-star-rating {
+    margin-bottom: 16px;
+}
+
+.review-submit-button {
+    background-color: #ff5a5f;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.review-submit-button:hover {
+    background-color: #e60000;
+}
+
+.review-submit-disabled {
+    background-color: #ebebeb;
+    color: #b3b3b3;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 4px;
+    border: none;
+    cursor: not-allowed;
+}
+
+.review-text-directions {
+    font-size: 14px;
+    color: #484848;
+    margin-bottom: 16px;
+}
+
+.rating-input-container {
+    display: flex;
+    align-items: center;
+}
+
+.rating-input {
+    display: flex;
+    align-items: center;
+}
+
+.filled {
+    color: #ff5a5f;
+}
+
+.empty {
+    color: #d8d8d8;
+}
+
+.review-stars-text {
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 8px;
+    color: #484848;
 }

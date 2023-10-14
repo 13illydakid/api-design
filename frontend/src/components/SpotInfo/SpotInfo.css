@@ -1,4 +1,4 @@
-.spot-info-loading{
+/* .spot-info-loading{
     display: flex;
     color: orange;
     margin-left: 50%;
@@ -7,6 +7,27 @@
     margin-top: 200px;
     font-size: 31px;
 }
+
+.overal-single-spot {
+    padding: 0px 80px;
+ }
+
+ .below-name-details{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+ }
+
+ .star-and-superhost-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+ }
+
+
 
 .single-spot-info-container{
     display: flex;
@@ -36,14 +57,14 @@
     height: 333px;
     /* border: solid navy;
     border-radius: 13px; */
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-content: center;
     border-radius: 13px;
     box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
-}
+} */
 
-.big-image{
+/* .big-image{
     height: 333px;
     width: 511px;
     border-radius: 13px;
@@ -58,16 +79,13 @@
     height: 333px;
     grid-gap: 13px;
     justify-content: space-evenly;
-    /* padding-left: 13px; */
 
 }
 
 .small-images{
-    /* border: solid navy; */
     border-radius: 13px;
     height: 157px;
     width: 223px;
-    /* padding: 10px; */
     border-radius: 13px;
     box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
 }
@@ -77,11 +95,11 @@
     display: flex;
     justify-content: space-between;
     padding-bottom: 25px;
-    border-bottom: solid navy 1px;
+    border-bottom: solid navy 1px; */
 
 
     /* padding-top: 13px; */
-}
+/* }
 
 .host-info-container{
     width: 70%;
@@ -102,7 +120,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+} */
 
 /* .price{
     font-size: 17px;
@@ -110,7 +128,7 @@
     font-weight: bold;
 
 } */
-
+/*
 .reserve-div-reviews{
     font-size: 12px;
     padding-left: 27px;
@@ -141,22 +159,18 @@
 
 
 .review-info-section{
-    /* display: grid;
-    grid-template-columns: repeat(auto-fill, 373px); */
-    /* width: */
     display: flex;
     flex-direction: row;
     max-width: 1000px;
     overflow-wrap: break-word;
-    /* height: 333px; */
     gap: 21px;
     justify-content: left;
     padding-bottom: 23px;
 }
 
-.review-info-container{
+.review-info-container{ */
     /* display: grid; */
-    width: 313px;
+    /* width: 313px;
 }
 
 .post-review-button{
@@ -166,7 +180,7 @@
 
 .first-review-message{
     /* padding-top: 23px; */
-    padding-bottom: 53px;
+    /* padding-bottom: 53px;
 }
 
 .reserve-button:active {
@@ -201,12 +215,12 @@
     justify-content: center;
     align-items: center;
     padding: none;
-}
+} */
 
 /* .modal-item-text{
     cursor: pointer;
 } */
-
+/*
 .delete-review-button{
     list-style-type: none;
     font-weight: bold;
@@ -222,7 +236,7 @@
     box-shadow: 0px 0px 21px 3px rgba(0, 0, 0, 0.33);
     display: grid;
     align-items: center;
-}
+} */
 
 
 
@@ -233,3 +247,73 @@
 
     }
 } */
+
+
+
+/* Add this to your AllSpots.css file */
+
+
+.all-spots-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+  }
+
+  .spot-container {
+    text-decoration: none;
+    color: inherit;
+    margin: 10px;
+    width: 250px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .spot-container:hover {
+    transform: scale(1.05);
+  }
+
+  .spot-info-container {
+    padding: 20px;
+  }
+
+  .mini-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  .spot-image-container {
+    height: 150px;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+
+  .all-spots-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .city-state-star-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .spot-info {
+    font-size: 1rem;
+  }
+
+  .all-spots-price {
+    color: #ff5a5f;
+    font-size: 1.2rem;
+  }
+
+  .all-spots-rating {
+    font-size: 1.2rem;
+  }
+
+

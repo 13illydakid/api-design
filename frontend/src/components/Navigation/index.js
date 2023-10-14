@@ -15,9 +15,9 @@ function Navigation({ isLoaded }){
       <div className='nav-bar-contents'>
         <div className='nav-bar-left'>
           <NavLink exact to="/">
-            <i className="logo-left fa-solid fa-brands fa-airbnb"></i>
+            {/* <i className="logo-left fa-solid fa-brands fa-airbnb"></i> */}
             <i className="fa-solid logo-text"><h1>On-Campus BnB</h1></i>
-            <i className="logo-right fa-solid fa-brands fa-airbnb"></i>
+            {/* <i className="logo-right fa-solid fa-brands fa-airbnb"></i> */}
           </NavLink>
         </div>
         <div className='nav-bar-right'>

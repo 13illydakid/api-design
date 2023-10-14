@@ -88,6 +88,24 @@ function SpotInfo() {
 
     return (
         <div className='single-spot-info-container'>
+            <div>
+            </div>
+            <div className='overal-single-spot'>
+                <div className='spot-listing-name'>
+                    <h1>{spotInfo.name}</h1>
+                </div>
+
+                <div className='city-state-review-div'>
+                    <div className='below-name-details' style={{ marginBottom: '1rem' }}>
+                        <div className='star-and-superhost-div'>
+                            <i className="fa-regular fa-star" />
+                            <span>{spotInfo.avgStarRating} Reviews</span>
+                            <span style={{ marginLeft: '1rem' }} >{spotInfo.numReview}</span>
+                            <span style={{ marginLeft: '1rem' }}>{spotInfo.city},{spotInfo.state},{spotInfo.country}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div className='single-spot-info'>
                 <h2>{spotInfo.name}</h2>
                 <p>{`${spotInfo.city}, ${spotInfo.state}, ${spotInfo.country}`}</p>
@@ -105,7 +123,24 @@ function SpotInfo() {
                         </img>
                     </div>
                     <div className='small-images-container'>
-                        <img
+                        {spotInfo.SpotImages.map((image, i) => {
+                            if (i > 0) {
+                                return (
+                                    <img
+                                        className='small-images'
+                                        src={image.url}
+                                        onError={(e) => {
+                                            e.target.onerror = null;
+                                            e.target.src = defaultImagesBackup[i];
+                                        }}
+                                        alt={spotInfo.name}
+                                        key={i}
+                                    />
+                                );
+                            }
+                            return null;
+                        })}
+                        {/* <img
                             className='small-images'
                             src={spotInfo.SpotImages[1].url}
                             onError={(e) => {
@@ -141,7 +176,7 @@ function SpotInfo() {
                                 e.target.src = defaultImagesBackup[4];
                             }}
                             alt={spotInfo.name}>
-                        </img>
+                        </img> */}
                     </div>
                 </div>
                 <div className='host-info-reserve-container'>

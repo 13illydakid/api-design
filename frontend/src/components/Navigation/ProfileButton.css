@@ -20,6 +20,8 @@
     font-size: 14px;
     font-weight: bolder;
     color: rgb(11, 0, 0);
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 
 .profile-container {
@@ -121,3 +123,121 @@
  .fa-bars{
     padding-left: 5px;
  }
+
+ /* .profile-button-container {
+    position: relative;
+  }
+
+  .profile-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    color: #222;
+    padding: 8px 16px;
+    border-radius: 24px;
+    transition: background-color 0.2s ease-in-out;
+  }
+
+  .profile-button:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .profile-button i {
+    margin-right: 8px;
+  }
+
+  .profile-dropdown {
+    position: absolute;
+    top: 48px;
+    right: 0;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    z-index: 999;
+    opacity: 0;
+    transform: translateY(-8px);
+    transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+  }
+
+  .profile-dropdown.hidden {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-16px);
+  }
+
+  .profile-dropdown.visible {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
+  .profile-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .username-container {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .email-container {
+    font-size: 14px;
+    color: #717171;
+  }
+
+  .manage-spots-link {
+    font-size: 14px;
+    color: #222;
+    text-decoration: none;
+    margin-top: 8px;
+  }
+
+  .manage-spots-link:hover {
+    text-decoration: underline;
+  }
+
+  .profile-buttons {
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #222;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+
+  .profile-buttons:hover {
+    background-color: #111;
+  }
+
+  .login-button,
+  .signup-button {
+    margin-top: 8px;
+  }
+
+  .login-button .menu-item-text,
+  .signup-button .menu-item-text {
+    font-size: 14px;
+    font-weight: 600;
+    color: #222;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+
+  .login-button .menu-item-text:hover,
+  .signup-button .menu-item-text:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  } */

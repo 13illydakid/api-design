@@ -1,9 +1,8 @@
-.hidden {
+/* .hidden {
     display: none
 }
 
 .logo-text{
-    /* transform: rotate(180deg); */
     color: rgb(255, 255, 255);
     border: 3px solid rgb(255, 255, 255);
     border-radius: 21px;
@@ -37,7 +36,6 @@
     margin-right: 0px;
     margin-top: 0px;
     margin-bottom: 0px;
-    /* padding: 3px 5px; */
     z-index:1;
     border-radius: 0px 0px 11px 11px;
  }
@@ -70,14 +68,12 @@
    font-family:  'Circular', 'BlinkMacSystemFont', 'Roboto', 'Helvetica Neue', sans-serif;
    text-decoration: none;
    background-color: rgb(255, 255, 255);
-   /* width: fit-content; */
    padding: 13px;
    border: rgb(0, 0, 0) solid;
    border-radius: 13px;
    color: rgb(0, 0, 0);
    font-weight: bold;
    display: flex;
-   /* flex-direction: row; */
    box-sizing: border-box;
    margin: 13px;
    box-shadow: 0px 0px 21px 1px rgb(243, 239, 239);
@@ -89,4 +85,98 @@
     justify-content: space-between;
     box-sizing: border-box;
     margin: 10px;
+ } */
+.hidden{
+  display: none;
+}
+
+.nav-bar-contents {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.nav-bar-left {
+  display: flex;
+  /* align-items: center; */
+   justify-content: left;
+  }
+
+  .nav-bar-left a {
+    display: flex;
+    /* align-items: left; */
+    justify-content: left;
+    text-decoration: none;
+    color: #222;
+  }
+
+  .nav-bar-left :hover {
+    color: #c20404;
+  }
+
+  .logo-left,
+  .logo-right {
+    font-size: 24px;
+    color: #222;
+  }
+
+  .logo-text {
+    color: rgb(255, 255, 255);
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 21px;
+  font-size: 13px;
+  box-shadow: 0px 0px 21px 1px rgb(255, 255, 255);
+ }
+ /* .logo-text :hover {
+  border: 3px solid #c20404;
+ } */
+
+ .nav-bar-right {
+   display: flex;
+   align-items: center;
+  }
+  .nav-bar {
+    width: 100%;
+    position: sticky;
+    box-sizing: border-box;
+
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    background-color: #000000;
+    z-index: 1;
+    box-shadow: 0 0 8px rgb(255, 255, 255);
+    border-radius: 0px 0px 11px 11px;
+  }
+
+ .create-new-spot {
+   font-size: 16px;
+   font-weight: 600;
+   color: #fff;
+   background-color: #222;
+   border-radius: 4px;
+   padding: 8px 16px;
+   margin-right: 16px;
+   text-decoration: none;
+   transition: background-color 0.2s ease-in-out;
+ }
+
+ .create-new-spot:hover {
+   background-color: #111;
+ }
+
+ .profile-button {
+  display: inline-flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin: 10px;
+ }
+
+
+ .profile-button:hover {
+   background-color: rgb(12, 249, 12);
  }

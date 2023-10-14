@@ -1,4 +1,5 @@
 // frontend/src/context/Modal.js
+
 import React, { useRef, useState, useContext } from 'react';
 import ReactDOM from 'react-dom';
 import './Modal.css';
@@ -58,3 +59,29 @@ export function Modal() {
 }
 
 export const useModal = () => useContext(ModalContext);
+/*
+<div className='big-box-div'>
+<div className="all-spots-container">
+    {spots.map(({ id, city, state, avgRating, price, previewImage }) => (
+        <div key={id} className='spot-container' onClick={() => history.push(`/spots/${id}`)}>
+            <div>
+                <div className='spot-image-container'>
+                    <img className='all-spots-image' src={previewImage} alt='preview-img'></img>
+                </div>
+                <div className='city-state-star-container'>
+                    <div className='flex-column'>
+                        <div className='spot-info'> {`${city},${state}`}</div>
+                        <div className='spot-info'>{`$${price} night`}</div>
+                    </div>
+                    <div className='flex-column'>
+                        <div className='all-spots-rating'>
+                            <i className="fas fa-star">{avgRating}</i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    ))}
+</div>
+</div>
+*/

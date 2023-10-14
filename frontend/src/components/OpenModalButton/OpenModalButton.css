@@ -1,4 +1,4 @@
-.modal-item-text{
+/* .modal-item-text{
     list-style-type: none;
     font-weight: bold;
     background-color: navy;
@@ -7,7 +7,6 @@
     border-radius: 9px;
     width: max-content;
     cursor: pointer;
-    /* margin-top: 21px; */
     margin-bottom: 27px;
     box-shadow: 0px 0px 9px 3px rgba(0, 0, 0, 0.34);
     height: 30px;
@@ -23,4 +22,20 @@
 .modal-item-text:active{
     transform: scale(0.98);
     box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
-}
+} */
+
+.modal-item-text {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #ff5a5f;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+
+  .modal-item-text:hover {
+    background-color: #e60000;
+  }
