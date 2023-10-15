@@ -91,7 +91,7 @@
 } */
 
 .all-spots-container {
-    display: flexbox;
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 1em;
     margin: 0 auto;
@@ -99,7 +99,8 @@
   }
 
   .spot-container {
-    display: block;
+    display: flex;
+    flex-grow: 1;
     text-decoration: none;
   }
 
@@ -121,7 +122,7 @@
     /* font-size: 18px; */
     /* font-weight: 600; */
     /* color: #484848; */
-    display: block;
+    display: inline;
     color: black;
     font-size: 1em;
     font-weight: inherit;

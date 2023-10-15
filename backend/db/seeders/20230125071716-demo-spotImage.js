@@ -21,47 +21,47 @@ module.exports = {
     return queryInterface.bulkInsert(options, [
       {
         spotId: 1,
-        url: "https://flic.kr/p/28TUa6u",
+        url: "../../frontend/public/images/38906255630_25b46512ef_o.jpg",
         preview: true
       },
       {
         spotId: 1,
-        url: "https://flic.kr/p/2aK5aj9",
+        url: "../../frontend/public/images/25825552507_44340792a1_o.jpg",
         preview: false
       },
       {
         spotId: 1,
-        url: "https://flic.kr/p/24ZWuui",
+        url: "../../frontend/public/images/32539451668_7a6f779f02_o.jpg",
         preview: false
       },
       {
         spotId: 1,
-        url: "https://flic.kr/p/Fm7H1F",
+        url: "../../frontend/public/images/40693435001_945bd357bc_o.jpg",
         preview: false
       },
       {
         spotId: 1,
-        url: "https://flic.kr/p/22h1JjS",
+        url: "../../frontend/public/images/43250507634_a8bbdb8e85_o.jpg",
         preview: false
       },
       {
         spotId: 1,
-        url: "https://flic.kr/p/2dHcuuD",
+        url: "../../frontend/public/images/44463324560_71ff51a864_o.jpg",
         preview: false
       },
       {
         spotId: 1,
-        url: "https://flic.kr/p/RzpcjL",
+        url: "../../frontend/public/images/46411192181_1046d4c350_o.jpg",
         preview: false
-      },
-      {
-        spotId: 2,
-        url: "https://housing.ucmerced.edu/sites/housing.ucmerced.edu/files/images/apatments_elportal_201216-16.jpeg",
-        preview: true
       },
       {
         spotId: 2,
         url: "https://www.davisvanguard.org/wp-content/uploads/2018/03/UCD-Student-Housing-1-of-5-e1520021463561.jpg",
+        preview: true
+      },
+      {
+        spotId: 2,
+        url: "https://housing.ucmerced.edu/sites/housing.ucmerced.edu/files/images/apatments_elportal_201216-16.jpeg",
         preview: false
       },
       {
@@ -86,7 +86,7 @@ module.exports = {
       },
       {
         spotId: 3,
-        url: "https://housing.ucsc.edu/tours/cowell/images/cowell-triple-photo.jpg",
+        url: "https://sp-ao.shortpixel.ai/client/to_auto,q_lossy,ret_img,w_1200,h_768/https://dcifurn.com/wp-content/uploads/2018/05/UCSC_porter2.jpg",
         preview: true
       },
       {
@@ -101,7 +101,7 @@ module.exports = {
       },
       {
         spotId: 3,
-        url: "https://sp-ao.shortpixel.ai/client/to_auto,q_lossy,ret_img,w_1200,h_768/https://dcifurn.com/wp-content/uploads/2018/05/UCSC_porter2.jpg",
+        url: "https://housing.ucsc.edu/tours/cowell/images/cowell-triple-photo.jpg",
         preview: false
       },
       {
@@ -111,7 +111,7 @@ module.exports = {
       },
       {
         spotId: 4,
-        url: "https://admissions.ucr.edu/sites/default/files/2021-06/ucr_on-campus-housing-still-available-for-fall-2021_blog.jpghttps://hospitality.ucr.edu/sites/default/files/header-apartment_0.jpg",
+        url: "https://www.vpix.net/uploads/panos/aberdeeninverness457189/slides/1469488960.jpg",
         preview: true
       },
       {
@@ -126,7 +126,7 @@ module.exports = {
       },
       {
         spotId: 4,
-        url: "https://www.vpix.net/uploads/panos/aberdeeninverness457189/slides/1469488960.jpg",
+        url: "https://admissions.ucr.edu/sites/default/files/2021-06/ucr_on-campus-housing-still-available-for-fall-2021_blog.jpghttps://hospitality.ucr.edu/sites/default/files/header-apartment_0.jpg",
         preview: false
       },
       {
@@ -146,12 +146,12 @@ module.exports = {
       },
       {
         spotId: 5,
-        url: "https://sp-ao.shortpixel.ai/client/to_auto,q_lossy,ret_img,w_1200,h_680/https://dcifurn.com/wp-content/uploads/2018/09/DCI-Furniture-solid-hardwood-for-dorms.jpg",
+        url: "https://images.shiksha.com/mediadata/images/1536650470phpiDMvi9.jpeg",
         preview: true
       },
       {
         spotId: 5,
-        url: "https://images.shiksha.com/mediadata/images/1536650470phpiDMvi9.jpeg",
+        url: "https://sp-ao.shortpixel.ai/client/to_auto,q_lossy,ret_img,w_1200,h_680/https://dcifurn.com/wp-content/uploads/2018/09/DCI-Furniture-solid-hardwood-for-dorms.jpg",
         preview: false
       },
       {
@@ -176,7 +176,7 @@ module.exports = {
       },
       {
         spotId: 6,
-        url: "https://studios.imgix.net/img/gallery-images/assets/uploads/UCLA_Landfair_3_Column_Kitchen.jpg?q=80",
+        url: "https://www.davisvanguard.org/wp-content/uploads/2021/04/ucla-housing-765x510.jpg",
         preview: true
       },
       {
@@ -206,7 +206,7 @@ module.exports = {
       },
       {
         spotId: 6,
-        url: "https://www.davisvanguard.org/wp-content/uploads/2021/04/ucla-housing-765x510.jpg",
+        url: "https://studios.imgix.net/img/gallery-images/assets/uploads/UCLA_Landfair_3_Column_Kitchen.jpg?q=80",
         preview: false
       },
       {
@@ -266,7 +266,7 @@ module.exports = {
       },
       {
         spotId: 8,
-        url: "https://housing.ucdavis.edu/_images/buildings/slide_shows/thoreau1.jpg",
+        url: "https://scontent-lax3-1.xx.fbcdn.net/v/t1.6435-9/194870949_10159517476778586_3712314757689835649_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=2c4854&_nc_ohc=8gdPNqBwoxoAX-gHiBD&_nc_ht=scontent-lax3-1.xx&cb_e2o_trans=t&oh=00_AfAxzoYPCqhgypPgb7R2px5WNDB9weWgyplnRYhuqe1zZQ&oe=654C8140",
         preview: true
       },
       {
@@ -281,7 +281,7 @@ module.exports = {
       },
       {
         spotId: 8,
-        url: "https://scontent-lax3-1.xx.fbcdn.net/v/t1.6435-9/194870949_10159517476778586_3712314757689835649_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=2c4854&_nc_ohc=8gdPNqBwoxoAX-gHiBD&_nc_ht=scontent-lax3-1.xx&cb_e2o_trans=t&oh=00_AfAxzoYPCqhgypPgb7R2px5WNDB9weWgyplnRYhuqe1zZQ&oe=654C8140",
+        url: "https://housing.ucdavis.edu/_images/buildings/slide_shows/thoreau1.jpg",
         preview: false
       },
       {
@@ -306,7 +306,7 @@ module.exports = {
       },
       {
         spotId: 9,
-        url: "https://mithun.com/wp-content/uploads/2023/07/1425800_N96-1.jpg",
+        url: "https://swinerton.com/wp-content/uploads/2019/02/JDZ2884a-1030x668.jpg",
         preview: true
       },
       {
@@ -326,7 +326,7 @@ module.exports = {
       },
       {
         spotId: 9,
-        url: "https://swinerton.com/wp-content/uploads/2019/02/JDZ2884a-1030x668.jpg",
+        url: "https://mithun.com/wp-content/uploads/2023/07/1425800_N96-1.jpg",
         preview: false
       },
       {
