@@ -91,52 +91,96 @@
 } */
 
 .all-spots-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 1em;
-    margin: 0 auto;
-    padding: auto;
-  }
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1em;
+  margin: 0 auto;
+  padding: auto;
+}
 
-  .spot-container {
-    display: flex;
-    flex-grow: 1;
-    text-decoration: none;
-  }
+.spot-container {
+  display: flex;
+  flex-grow: 1;
+  text-decoration: none;
+}
 
-  .spot-info-container {
-    position: relative;
-    padding: 16px;
-    background-color: #fff;
-    border-radius: 8px;
-    /* box-shadow: 0 0 24px rgba(0, 0, 0, 0.1);
+.spot-info-container {
+  position: relative;
+  padding: 16px;
+  /* width: 640px;
+  height: 450px; */
+  background-color: #fff;
+  border-radius: 8px;
+  margin: 0 auto;
+  /* box-shadow: 0 0 24px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease-in-out; */
-  }
+}
 
-  .spot-info-container:hover {
-    transform: translateY(-4px);
-  }
+.spot-info-container:hover {
+  transform: translateY(-4px);
+}
 
 
-  .mini-title h2 {
-    /* font-size: 18px; */
-    /* font-weight: 600; */
-    /* color: #484848; */
-    display: inline;
-    color: black;
-    font-size: 1em;
-    font-weight: inherit;
-    line-height: inherit;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-  }
-  .mini-title :hover {
-    color: blueviolet;
-  }
+.mini-title h2 {
+  /* font-size: 18px; */
+  /* font-weight: 600; */
+  /* color: #484848; */
+  display: inline;
+  color: black;
+  font-size: 1em;
+  font-weight: inherit;
+  line-height: inherit;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
 
-  .spot-image-container {
+.mini-title :hover {
+  color: blueviolet;
+}
+
+/* .spot-info-container .spot-image-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 450px;
+  width: 640px; */
+  /* height: inherit;
+  width: inherit; */
+  /* overflow: hidden;
+  text-align: center;
+} */
+
+/* .spot-info-container .spot-image-container div {
+  width: 640px;
+  height: 900px;
+  padding-top: 10px;
+  position: relative;
+}
+
+.spot-info-container .spot-image-container div img {
+  clear: both;
+  display: block;
+  margin: 0 auto;
+  border: 0;
+}
+
+.spot-image-container .previous {
+  display: inline;
+  float: left;
+  margin-left: 80px;
+  text-decoration: none;
+}
+
+.spot-image-container .next {
+  display: inline;
+  float: right;
+  margin-right: 80px;
+  text-decoration: none;
+} */
+
+.spot-image-container {
     position: relative;
     width: auto;
     height: auto;
@@ -145,7 +189,7 @@
     border-radius: 8px;
   }
 
-  .all-spots-image {
+.all-spots-image {
     position: absolute;
     top: 0;
     left: 0;
@@ -155,40 +199,40 @@
     border-radius: 8px;
   }
 
-  .city-state-star-container {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 8px;
-  }
+.city-state-star-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+}
 
-  .spot-info {
-    font-size: 0.9375rem;
-    color: #717171;
-  }
+.spot-info {
+  font-size: 0.9375rem;
+  color: #717171;
+}
 
-  .all-spots-price {
-    font-size: 16px;
-    font-weight: 600;
-    color: #484848;
-  }
+.all-spots-price {
+  font-size: 16px;
+  font-weight: 600;
+  color: #484848;
+}
 
-  .all-spots-rating {
-    display: inline-flex;
-    align-items: center;
-    margin-left: 8px;
-    font-size: 14px;
-    font-weight: 600;
-    color: #484848;
-  }
+.all-spots-rating {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #484848;
+}
 
-  .fa-solid.fa-star {
-    /* margin-top: 0px;
+.fa-solid.fa-star {
+  /* margin-top: 0px;
     margin-right: 0px;
     color: #ff5a5f; */
-    display:inline;
-    height: 12px;
-    width: 12px;
-    fill: currentColor;
-    /* overflow-clip-margin: content-box; */
-    /* overflow: hidden; */
-  }
+  display: inline;
+  height: 12px;
+  width: 12px;
+  fill: currentColor;
+  /* overflow-clip-margin: content-box; */
+  /* overflow: hidden; */
+}

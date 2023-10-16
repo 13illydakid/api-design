@@ -1,9 +1,10 @@
 
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { thunkGetAllSpots } from "../../store/spots";
+import { thunkGetAllSpots, thunkGetSpotInfo } from "../../store/spots";
 import { NavLink } from "react-router-dom";
 import './AllSpots.css';
+import { useParams } from "react-router-dom";
 
 
 const generatePreviewImage = (previewImage) => {
@@ -18,6 +19,8 @@ function AllSpots() {
 
   const dispatch = useDispatch();
   const spots = Object.values(useSelector(state => state.spots.allSpots));
+  // const spots = useSelector(state => state.spots.allSpots);
+  console.log(spots)
 
   useEffect(() => {
     dispatch(thunkGetAllSpots());
@@ -35,7 +38,44 @@ function AllSpots() {
       {spots.map(spot =>
         <NavLink to={`/spots/${spot.id}`} key={spot.id} className="spot-container">
           <div title={spot.name} className="spot-info-container">
+            {/* "gallerywrapper" */}
             <div className='spot-image-container'>
+              {/* console.log(spot.previewImage.length)
+              <img src={spot.previewImage} alt=""></img> */}
+              {/* gallery */}
+              console.log(spot)
+              {/* {spot.previewImage.map((image, i) => {
+                if (i > 0 && i < spot.previewImage.length - 1) {
+                  return (
+                    <div className="pic">
+                      <img src={image.url} height="350" width="500" alt={`${i}`}></img>
+                      <a className="previous" href={`#pic${i - 1}`}>&lt;</a>
+                      <a className="next" href={`#pic${i + 1}`}>&gt;</a>
+                    </div>
+                  )
+                } else {
+                  if (i === 0) {
+                    return (
+                      // <div id={`pic${i}`}>
+                      <div className="pic">
+                        <img src={image.url} height="350" width="500" alt={`${i}`}></img>
+                        <a className="previous" href={`#pic${spot.previewImage.length - 1}`}>&lt;</a>
+                        <a className="next" href={`#pic${i + 1}`}>&gt;</a>
+                      </div>
+                    )
+                  } else {
+                    return (
+                      // <div id={`pic${i}`}>
+                      <div className="pic">
+                        <img src={image.url} height="350" width="500" alt={`${i}`}></img>
+                        <a className="previous" href={`#pic${i - 1}`}>&lt;</a>
+                        <a className="next" href={`#pic${0}`}>&gt;</a>
+                      </div>
+                    )
+                  }
+                }
+              })} */}
+
               <img
                 className="all-spots-image"
                 src={generatePreviewImage(spot.previewImage)}
@@ -47,9 +87,6 @@ function AllSpots() {
                 alt="">
               </img>
             </div>
-            {/* <p className="spot-info">
-                    <strong>{spot.name}</strong>
-                </p> */}
             <div className="mini-title">
               <h2>{spot.name}</h2>
             </div>

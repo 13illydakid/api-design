@@ -316,4 +316,41 @@
     font-size: 1.2rem;
   }
 
+  .small-images-container {
+  position: relative;
+  left: 0;
+  top: 0;
+  height: 450px;
+  width: 640px;
+  /* height: inherit;
+  width: inherit; */
+  overflow: hidden;
+  text-align: center;
+}
 
+  .small-images-container div {
+    width: 640px;
+    height: 900px;
+    padding-top: 10px;
+    position: relative;
+  }
+
+  .small-images-container div img {
+    clear: both;
+    display: block;
+    margin: 0 auto;
+    border: 0;
+  }
+
+.small-images-container .pic .previous {
+  display: inline;
+  float: left;
+  margin-left: 80px;
+  text-decoration: none;
+}
+.small-images-container .pic .next {
+  display: inline;
+  float: right;
+  margin-right: 80px;
+  text-decoration: none;
+}

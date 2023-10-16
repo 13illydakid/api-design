@@ -124,21 +124,52 @@ function SpotInfo() {
                     </div>
                     <div className='small-images-container'>
                         {spotInfo.SpotImages.map((image, i) => {
-                            if (i > 0) {
-                                return (
-                                    <img
-                                        className='small-images'
-                                        src={image.url}
-                                        onError={(e) => {
-                                            e.target.onerror = null;
-                                            e.target.src = defaultImagesBackup[i];
-                                        }}
-                                        alt={spotInfo.name}
-                                        key={i}
-                                    />
-                                );
-                            }
-                            return null;
+                                          if (i > 0 && i < spotInfo.SpotImages.length - 1) {
+                                            return (
+                                              // <div className="pic">
+                                              <div id={`pic${i}`}>
+                                                <img src={image.url} height="350" width="500" alt={`${i}`}></img>
+                                                <a className="previous" href={`#pic${i - 1}`}>&lt;</a>
+                                                <a className="next" href={`#pic${i + 1}`}>&gt;</a>
+                                              </div>
+                                            )
+                                          } else {
+                                            if (i === 0) {
+                                              return (
+                                                <div id={`pic${i}`}>
+                                                {/* <div className="pic"> */}
+                                                  <img src={image.url} height="350" width="500" alt={`${i}`}></img>
+                                                  <a className="previous" href={`#pic${spotInfo.SpotImages.length - 1}`}>&lt;</a>
+                                                  <a className="next" href={`#pic${i + 1}`}>&gt;</a>
+                                                </div>
+                                              )
+                                            } else {
+                                              return (
+                                                <div id={`pic${i}`}>
+                                                {/* <div className="pic"> */}
+                                                  <img src={image.url} height="350" width="500" alt={`${i}`}></img>
+                                                  <a className="previous" href={`#pic${i - 1}`}>&lt;</a>
+                                                  <a className="next" href={`#pic${0}`}>&gt;</a>
+                                                </div>
+                                              )
+                                            }
+                                          }
+
+                            // if (i > 0) {
+                            //     return (
+                            //         <img
+                            //             className='small-images'
+                            //             src={image.url}
+                            //             onError={(e) => {
+                            //                 e.target.onerror = null;
+                            //                 e.target.src = defaultImagesBackup[i];
+                            //             }}
+                            //             alt={spotInfo.name}
+                            //             key={i}
+                            //         />
+                            //     );
+                            // }
+                            // return null;
                         })}
                         {/* <img
                             className='small-images'
