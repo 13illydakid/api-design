@@ -114,17 +114,17 @@
   }
 
   .nav-bar-left :hover {
-    color: #c20404;
+    color: #d3caca;
   }
 
   .logo-left,
   .logo-right {
     font-size: 24px;
-    color: #222;
+    color: #cf2a2a;
   }
 
   .logo-text {
-    color: rgb(255, 255, 255);
+    color: #cf2a2a;
     border: 3px solid rgb(255, 255, 255);
     border-radius: 21px;
   font-size: 13px;
@@ -147,17 +147,23 @@
     margin-bottom: 0px;
     margin-right: 0px;
     margin-left: 0px;
-    background-color: #000000;
+    /* background-color: #ffffff; */
     z-index: 1;
-    box-shadow: 0 0 8px rgb(255, 255, 255);
+    /* box-shadow: 0 0 8px rgb(255, 255, 255); */
+    box-shadow: 0 1px 2px 0 rgba(30, 29, 29, 0.05);
     border-radius: 0px 0px 11px 11px;
+    .shadow-sm {
+      --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+      --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+      box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    }
   }
 
  .create-new-spot {
    font-size: 16px;
    font-weight: 600;
    color: #fff;
-   background-color: #222;
+   background-color: #ba1010;
    border-radius: 4px;
    padding: 8px 16px;
    margin-right: 16px;
@@ -166,11 +172,11 @@
  }
 
  .create-new-spot:hover {
-   background-color: #111;
+   background-color: #8c3535;
  }
 
  .profile-button {
-  display: inline-flex;
+  display: flex;
   justify-content: space-between;
   box-sizing: border-box;
   margin: 10px;
@@ -178,5 +184,5 @@
 
 
  .profile-button:hover {
-   background-color: rgb(12, 249, 12);
+   background-color: rgb(174, 174, 174);
  }

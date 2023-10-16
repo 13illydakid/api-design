@@ -62,11 +62,6 @@ function ProfileButton({ user }) {
               {/* <div>{user.username}</div> */}
             </div>
 
-            {/* <div className="name-container">
-              <div>NAME:</div>
-              <div>{user.firstName} {user.lastName}</div>
-            </div> */}
-
             <div className="email-container">
               <div>EMAIL:</div>
               <div>{user.email}</div>

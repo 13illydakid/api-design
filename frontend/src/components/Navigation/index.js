@@ -4,6 +4,8 @@ import { NavLink } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import ProfileButton from './ProfileButton';
 import './Navigation.css';
+import Search from "./Search";
+import Menu from "./Menu";
 
 
 
@@ -21,11 +23,15 @@ function Navigation({ isLoaded }){
             {/* <i className="logo-right fa-solid fa-brands fa-airbnb"></i> */}
           </NavLink>
         </div>
+        <div className='nav-bar-center'>
+          <Search />
+        </div>
         <div className='nav-bar-right'>
           {sessionUser ? <NavLink to='/spot/createSpotForm' className='create-new-spot'>Create a New Spot</NavLink> : null}
           {isLoaded && (
             <div className='profile-button'>
-              <ProfileButton user={sessionUser} />
+              {/* <ProfileButton user={sessionUser} /> */}
+              <Menu user={sessionUser} />
             </div>
           )}
         </div>

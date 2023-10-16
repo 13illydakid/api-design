@@ -100,13 +100,13 @@ const categories = [
 ]
 
 const support = [
-  "Support", "Help Center", "AirCover", "Anti-discrimination", "Disability support", "Cancellation options", "Report neighborhood concern"
+  "Support", "Help Center", "DormCover", "Anti-discrimination", "Disability support", "Cancellation options", "Report neighborhood concern"
 ]
 const hosting = [
-  "Hosting", "Airbnb your home", "AirCover for Hosts", "Hosting resources", "Community forum", "Hosting responsibility", "Airbnb-friendly apartments"
+  "Hosting", "Dormbnb your home", "DormCover for Hosts", "Hosting resources", "Community forum", "Hosting responsibility", "Dormbnb-friendly apartments"
 ]
 const airbnb = [
-  "Airbnb", "Newsroom", "New features", "Careers", "Investors", "Gift cards", "Airbnb.org emergency stays"
+  "Dormbnb", "Newsroom", "New features", "Careers", "Investors", "Gift cards", "Dormbnb.org emergency stays"
 ]
 
 function App() {
