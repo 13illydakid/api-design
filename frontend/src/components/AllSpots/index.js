@@ -20,7 +20,7 @@ function AllSpots() {
   const dispatch = useDispatch();
   const spots = Object.values(useSelector(state => state.spots.allSpots));
   // const spots = useSelector(state => state.spots.allSpots);
-  console.log(spots)
+  // console.log(spots)
 
   useEffect(() => {
     dispatch(thunkGetAllSpots());
@@ -38,12 +38,11 @@ function AllSpots() {
       {spots.map(spot =>
         <NavLink to={`/spots/${spot.id}`} key={spot.id} className="spot-container">
           <div title={spot.name} className="spot-info-container">
-            {/* "gallerywrapper" */}
             <div className='spot-image-container'>
               {/* console.log(spot.previewImage.length)
               <img src={spot.previewImage} alt=""></img> */}
               {/* gallery */}
-              console.log(spot)
+              {/* console.log(spot) */}
               {/* {spot.previewImage.map((image, i) => {
                 if (i > 0 && i < spot.previewImage.length - 1) {
                   return (
@@ -78,7 +77,8 @@ function AllSpots() {
 
               <img
                 className="all-spots-image"
-                src={generatePreviewImage(spot.previewImage)}
+                // src={generatePreviewImage(spot.previewImage)}
+                src={spot.previewImage}
                 onError={(e) => {
                   e.target.onerror = null;
                   e.target.src = "https://st3.depositphotos.com/26272052/33085/v/600/depositphotos_330852614-stock-illustration-color-delete-folder-icon-isolated.jpg"
