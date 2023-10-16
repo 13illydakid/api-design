@@ -1,9 +1,10 @@
 // frontend/src/components/Navigation/index.js
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import ProfileButton from './ProfileButton';
 import './Navigation.css';
+
 
 
 function Navigation({ isLoaded }){
@@ -29,6 +30,13 @@ function Navigation({ isLoaded }){
           )}
         </div>
       </div>
+      {/* <div className="nav-bar-contents">
+        <CategoryPills
+        categories={categories}
+          selectedCategory={selectedCategory}
+          onSelect={setSelectedCategory}
+        />
+      </div> */}
     </div>
   );
 }
