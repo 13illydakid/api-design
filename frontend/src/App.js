@@ -10,31 +10,18 @@ import CreateSpotForm from "./components/CreateSpotForm"
 import ManageSpots from "./components/ManageSpots";
 import UpdateSpotForm from "./components/UpdateSpotForm";
 import ScrollToTop from "./ScrollToTop";
-// import Categories from "./components/Category";
 // import categories from "./components/Category";
 import "./components/Category/index.css"
-import Container from "./components/Category";
 
 import "./index.css";
 import { TbBeach, TbMountain, TbPool } from 'react-icons/tb';
-import {
-  GiBarn,
-  GiBoatFishing,
-  GiCactus,
-  GiCastle,
-  GiCaveEntrance,
-  GiForestCamp,
-  GiIsland,
-  GiWindmill
-} from 'react-icons/gi';
+import { GiBarn, GiBoatFishing, GiCactus, GiCastle, GiCaveEntrance, GiForestCamp, GiIsland, GiWindmill } from 'react-icons/gi';
 import { FaSkiing } from 'react-icons/fa';
 import { BsSnow } from 'react-icons/bs';
 import { IoDiamond } from 'react-icons/io5';
 import { MdOutlineVilla } from 'react-icons/md';
 
-
-
-export const categories = [
+const categories = [
   {
     label: 'Beach',
     icon: TbBeach,
@@ -112,6 +99,16 @@ export const categories = [
   }
 ]
 
+const support = [
+  "Support", "Help Center", "AirCover", "Anti-discrimination", "Disability support", "Cancellation options", "Report neighborhood concern"
+]
+const hosting = [
+  "Hosting", "Airbnb your home", "AirCover for Hosts", "Hosting resources", "Community forum", "Hosting responsibility", "Airbnb-friendly apartments"
+]
+const airbnb = [
+  "Airbnb", "Newsroom", "New features", "Careers", "Investors", "Gift cards", "Airbnb.org emergency stays"
+]
+
 function App() {
   const dispatch = useDispatch();
   const [isLoaded, setIsLoaded] = useState(false);
@@ -131,9 +128,6 @@ function App() {
   return (
     <>
       <Navigation isLoaded={isLoaded} />
-      {/* <Categories /> */}
-      {/* <Navigation isLoaded={isLoaded} /> */}
-      {/* <Container> */}
 
       <div className="categories-container">
         {categories.map((category, i) => {
@@ -147,14 +141,11 @@ function App() {
                 <div className="category-label">
                   {category.label}</div>
               </div>
-
             )
           }
           return null
         })}
       </div>
-      {/* </Container> */}
-
 
       {isLoaded && (
         <Switch>
@@ -179,6 +170,72 @@ function App() {
           </Route>
         </Switch>
       )}
+
+      <div className="break-line">
+        <hr />
+      </div>
+
+      <div className="footer-background">
+
+        <div className="footer-container">
+          <div className="footer-info">
+            {support.map((data, i) => {
+              if (i === 0) {
+                return (
+                  <span className="footer-text-1">
+                    {data}
+                  </span>
+                )
+              } else {
+                return (
+                  <span className="footer-text">
+                    {data}
+                  </span>
+                )
+              }
+            })}
+          </div>
+          <div className="footer-info">
+            {hosting.map((data, i) => {
+              if (i === 0) {
+                return (
+                  <span className="footer-text-1">
+                    {data}
+                  </span>
+                )
+              } else {
+                return (
+                  <span className="footer-text">
+                    {data}
+                  </span>
+                )
+              }
+            })}
+          </div>
+          <div className="footer-info">
+            {airbnb.map((data, i) => {
+              if (i === 0) {
+                return (
+                  <span className="footer-text-1">
+                    {data}
+                  </span>
+                )
+              } else {
+                return (
+                  <span className="footer-text">
+                    {data}
+                  </span>
+                )
+              }
+            })}
+          </div>
+        </div>
+      <div className="break-line-bottom">
+        <hr />
+      </div>
+      </div>
+
+
     </>
   );
 }
