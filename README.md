@@ -21,7 +21,6 @@ Begin by cloning this project with 'git clone https://github.com/13illydakid/api
 3. You can start the application by running the following command:
 
    ```bash
-   Copy code
    npm start
    ```
    Note: If you want to run the application in development mode, you can use the command npm run start:development. Similarly, to run the application in production mode, use the command npm run start:production.
