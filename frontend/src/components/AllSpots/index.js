@@ -34,46 +34,12 @@ function AllSpots() {
   }
 
   return (
+    // <div className="mt-8 grid gap-x-6 gap-y-8 grid-cols-2 md:grid-cols-3 lg:grid-cols-3 grid-flow-row">
     <div className="all-spots-container">
       {spots.map(spot =>
         <NavLink to={`/spots/${spot.id}`} key={spot.id} className="spot-container">
           <div title={spot.name} className="spot-info-container">
             <div className='spot-image-container'>
-              {/* console.log(spot.previewImage.length)
-              <img src={spot.previewImage} alt=""></img> */}
-              {/* gallery */}
-              {/* console.log(spot) */}
-              {/* {spot.previewImage.map((image, i) => {
-                if (i > 0 && i < spot.previewImage.length - 1) {
-                  return (
-                    <div className="pic">
-                      <img src={image.url} height="350" width="500" alt={`${i}`}></img>
-                      <a className="previous" href={`#pic${i - 1}`}>&lt;</a>
-                      <a className="next" href={`#pic${i + 1}`}>&gt;</a>
-                    </div>
-                  )
-                } else {
-                  if (i === 0) {
-                    return (
-                      // <div id={`pic${i}`}>
-                      <div className="pic">
-                        <img src={image.url} height="350" width="500" alt={`${i}`}></img>
-                        <a className="previous" href={`#pic${spot.previewImage.length - 1}`}>&lt;</a>
-                        <a className="next" href={`#pic${i + 1}`}>&gt;</a>
-                      </div>
-                    )
-                  } else {
-                    return (
-                      // <div id={`pic${i}`}>
-                      <div className="pic">
-                        <img src={image.url} height="350" width="500" alt={`${i}`}></img>
-                        <a className="previous" href={`#pic${i - 1}`}>&lt;</a>
-                        <a className="next" href={`#pic${0}`}>&gt;</a>
-                      </div>
-                    )
-                  }
-                }
-              })} */}
 
               <img
                 className="all-spots-image"

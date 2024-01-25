@@ -94,8 +94,9 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 1em;
-  margin: 0 auto;
-  padding: auto;
+  padding: 20px;
+  margin: 15px;
+  border: 20px;
 }
 
 .spot-container {
@@ -118,6 +119,8 @@
 
 .spot-info-container:hover {
   transform: translateY(-4px);
+  background-color: lightgray;
+  transform: scale(1.05);
 }
 
 
