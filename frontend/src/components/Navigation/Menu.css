@@ -20,7 +20,7 @@
   flex-direction: row;
   align-items: center;
   margin-left: 0.75rem;
-  width: 100%;
+  width: auto;
   height: auto;
 
 }
@@ -43,13 +43,10 @@
   }
 }
 
-.bnb-promp-text:hover {
-  background-color: #f4f4f5;
-  transition-property: all;
-  transition-duration: 150ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+/* .bnb-promp-text:hover {
+  background-color: purple;
   cursor: pointer;
-}
+} */
 
 .menu-icon {
   padding: 1rem;
@@ -64,15 +61,14 @@
   align-items: center;
   margin-left: 0.75rem;
   border-radius: 9999px;
-  height: 10px;
+  height: auto;
 }
 
 .menu-icon:hover {
   box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.1);
-  transition-property: all;
-  transition-duration: 150ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
+  background-color: darkblue;
+  color: lightgreen;
 }
 
 .menu-user-image .hidden {
@@ -144,23 +140,35 @@
 
 .login-button{
   font-family: 'Circular', 'BlinkMacSystemFont', 'Roboto', 'Helvetica Neue', sans-serif;
-  font-size: inherit;
+  font-size: small;
   font-weight: bold;
   color: whitesmoke;
   background-color: black;
   border: none;
   cursor: pointer;
-  border-radius: 5px;
+  padding: 0.5rem;
+  border-radius: 0.75rem;
+}
+
+.login-button:hover {
+  background-color: white;
+  color: black;
 }
 
 .signup-button{
   font-family: 'Circular', 'BlinkMacSystemFont', 'Roboto', 'Helvetica Neue', sans-serif;
-  font-size: inherit;
+  font-size: small;
   font-weight: bold;
   color: rgb(0, 0, 0);
   background-color: white;
   border: none;
   cursor: pointer;
+  padding: 0.5rem;
   margin-top: 5px;
-  border-radius: 10px;
+  border-radius: 0.75rem;
+}
+
+.signup-button:hover {
+  background-color: black;
+  color: white;
 }

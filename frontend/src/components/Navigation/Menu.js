@@ -50,6 +50,7 @@ function Menu({ user }) {
   // const ulClassName = "profile-dropdown" + (showMenu ? "" : " hidden");
 
   return (
+    <>
     <div className="menu-container-outer">
       <div className="menu-container-inner">
         <div className="bnb-prompt-text">
@@ -60,7 +61,7 @@ function Menu({ user }) {
           <div className="menu-user-image">
             <div className="user-image">
               {/* <img src="/images/placeholder.jpg" alt="" /> */}
-              <FaUserCircle size={26}/>
+              <FaUserCircle size={26} />
             </div>
           </div>
         </div>
@@ -89,24 +90,30 @@ function Menu({ user }) {
                 <p>
                   <button className="profile-buttons" onClick={logout}>LOGOUT</button>
                 </p>
-                </>
+              </>
             ) : (
               <>
-                <button className="login-button">
-                  <OpenModalMenuItem
-                    className="login"
-                    itemText="LOGIN"
-                    onItemClick={closeMenu}
-                    modalComponent={<LoginFormModal />}
-                  />
-                </button>
-                <button className="signup-button">
-                  <OpenModalMenuItem
-                    itemText="SIGN UP"
-                    onItemClick={closeMenu}
-                    modalComponent={<SignupFormModal />}
-                  />
-                </button>
+                <div className="bg-gray-700 w-auto block justify-center items-center">
+                  <div className="flex justify-center items-center">
+                    <button className="login-button">
+                      <OpenModalMenuItem
+                        className="login"
+                        itemText="LOGIN"
+                        onItemClick={closeMenu}
+                        modalComponent={<LoginFormModal />}
+                        />
+                    </button>
+                  </div>
+                  <div className="flex justify-center items-center">
+                    <button className="signup-button">
+                      <OpenModalMenuItem
+                        itemText="SIGN UP"
+                        onItemClick={closeMenu}
+                        modalComponent={<SignupFormModal />}
+                        />
+                    </button>
+                  </div>
+                </div>
               </>
             )}
           </div>
@@ -118,6 +125,10 @@ function Menu({ user }) {
       </button> */}
 
     </div>
+    {/* <div onClick={closeMenu}>
+
+    </div> */}
+      </>
   );
 }
 
