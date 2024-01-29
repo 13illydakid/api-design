@@ -21,6 +21,7 @@ router.use('/review-images', reviewImagesRouter);
 
 //testing route for front end AUTH-ME phases
 router.post('/test', (req, res) => {
+  console.log('Does this Work?');
     res.json({ requestBody: req.body });
 });
 

@@ -43,6 +43,7 @@ module.exports = {
     database: process.env.DATABASE,
     host: process.env.DATABASE_HOST,
     port: 5432,
+    // port: process.env.PORT,
     dialectOptions: {
       ssl: {
         require: true,

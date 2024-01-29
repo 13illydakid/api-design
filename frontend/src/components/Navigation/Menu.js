@@ -51,84 +51,79 @@ function Menu({ user }) {
 
   return (
     <>
-    <div className="menu-container-outer">
-      <div className="menu-container-inner">
-        <div className="bnb-prompt-text">
-          Dormbnb your home
-        </div>
-        <div onClick={openMenu} className="menu-icon">
-          <AiOutlineMenu />
-          <div className="menu-user-image">
-            <div className="user-image">
-              {/* <img src="/images/placeholder.jpg" alt="" /> */}
-              <FaUserCircle size={26} />
+      <div className="menu-container-outer">
+        <div className="menu-container-inner">
+          <div className="bnb-prompt-text">
+            Dormbnb your home
+          </div>
+          <div onClick={openMenu} className="menu-icon">
+            <AiOutlineMenu />
+            <div className="menu-user-image">
+              <div className="user-image">
+                {/* <img src="/images/placeholder.jpg" alt="" /> */}
+                <FaUserCircle size={26} />
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      {showMenu && (
-        <div className="menu-open-outer">
-          <div className="menu-open-inner">
-            {user ? (
-              <>
-                <div className="username-container">
-                  <div>Hello, {user.firstName}</div>
+        {showMenu && (
+          <div className="menu-open-outer">
+            <div className="menu-open-inner">
+              {user ? (
+                <>
+                  <div className="username-container">
+                    <div>Hello, {user.firstName}</div>
 
-                </div>
-
-                <div className="email-container">
-                  <div>EMAIL:</div>
-                  <div>{user.email}</div>
-                </div>
-
-                <Link to='/spots/current' className="manage-spots-link" onClick={closeMenu}>
-                  <div className="profile-buttons">
-                    MANAGE SPOTS
                   </div>
-                </Link>
 
-                <p>
-                  <button className="profile-buttons" onClick={logout}>LOGOUT</button>
-                </p>
-              </>
-            ) : (
-              <>
-                <div className="bg-gray-700 w-auto block justify-center items-center">
-                  <div className="flex justify-center items-center">
-                    <button className="login-button">
-                      <OpenModalMenuItem
-                        className="login"
-                        itemText="LOGIN"
-                        onItemClick={closeMenu}
-                        modalComponent={<LoginFormModal />}
+                  <div className="email-container">
+                    <div>EMAIL:</div>
+                    <div>{user.email}</div>
+                  </div>
+
+                  <Link to='/spots/current' className="manage-spots-link" onClick={closeMenu}>
+                    <div className="profile-buttons">
+                      MANAGE SPOTS
+                    </div>
+                  </Link>
+
+                  <p>
+                    <button className="profile-buttons" onClick={logout}>LOGOUT</button>
+                  </p>
+                </>
+              ) : (
+                <>
+                  <div className="bg-gray-700 w-auto block justify-center items-center">
+                    <div className="flex justify-center items-center">
+                      <button className="login-button">
+                        <OpenModalMenuItem
+                          className="login"
+                          itemText="LOGIN"
+                          onItemClick={closeMenu}
+                          modalComponent={<LoginFormModal />}
                         />
-                    </button>
-                  </div>
-                  <div className="flex justify-center items-center">
-                    <button className="signup-button">
-                      <OpenModalMenuItem
-                        itemText="SIGN UP"
-                        onItemClick={closeMenu}
-                        modalComponent={<SignupFormModal />}
+                      </button>
+                    </div>
+                    <div className="flex justify-center items-center">
+                      <button className="signup-button">
+                        <OpenModalMenuItem
+                          itemText="SIGN UP"
+                          onItemClick={closeMenu}
+                          modalComponent={<SignupFormModal />}
                         />
-                    </button>
+                      </button>
+                    </div>
                   </div>
-                </div>
-              </>
-            )}
+                </>
+              )}
+            </div>
+      {/* <div className="fixed top-0 bottom-0 left-0 right-0" onClick={closeMenu}>
+      </div> */}
           </div>
-        </div>
-      )}
+        )}
 
-
-      {/* <button onClick={openMenu} className="profile-button">
-      </button> */}
-
-    </div>
-    {/* <div onClick={closeMenu}>
-
-    </div> */}
-      </>
+      </div>
+    </>
   );
 }
 

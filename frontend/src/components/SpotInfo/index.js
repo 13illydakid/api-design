@@ -22,46 +22,54 @@ const months = [
 
 function SpotInfo() {
 
-  // const dispatch = useDispatch();
+  const dispatch = useDispatch();
   const { spotId } = useParams();
-  // const spotInfo = useSelector(state => state.spots.singleSpot);
-  // const currentUser = useSelector(state => state.session.user);
+  const spotInfo = useSelector(state => state.spots.singleSpot);
+  const currentUser = useSelector(state => state.session.user);
   // const allSpotReviews = useSelector(state => state.reviews.spot);
   // const allSpotReviewsArray = Object.values(allSpotReviews);
   // const allReviewsUserIdsArray = allSpotReviewsArray.map(review => review.User.id)
-
-  // useEffect(() => {
-  //   dispatch(thunkGetplace(spotId));
-  //   dispatch(thunkGetAllSpotReviews(spotId));
-  //   console.log(thunkGetplace(spotId));
-  // }, [dispatch, spotId]);
-
   const [place, setPlace] = useState(null);
 
   useEffect(() => {
-    if (!spotId) {
-      return;
-    }
-    axios.get(`/api/spots/${spotId}`).then(response => {
-      setPlace(response.data);
-    });
-  }, [spotId]);
+    // if(!spotId){
+    //   return;
+    // }
+    dispatch(thunkGetSpotInfo(spotId));
+    dispatch(thunkGetAllSpotReviews(spotId));
+    console.log(thunkGetSpotInfo(spotId));
+  }, [dispatch, spotId]);
 
-  console.log(place);
-  if (!place) {
+  console.log("does this work?");
+  console.log("does this work?");
+  console.log(spotInfo);
+  // setPlace(spotInfo);
+
+  // useEffect(() => {
+    //   if (!spotId) {
+      //     return;
+      //   }
+      //   axios.get(`/api/spots/${spotId}`).then(response => {
+  //     setPlace(response.data);
+  //   });
+  // }, [spotId]);
+
+  // console.log(place);
+  console.log("who is this")
+  console.log(spotInfo);
+  if (!spotInfo) {
     // return '';
     return (
       <i className="fa-solid fa-truck-ramp-box spot-info-loading">Loading...</i>
     )
   }
 
-  console.log(place);
-  console.log("does this work?")
+  // console.log(place);
   // console.log(place);
   // console.log("does this work?")
   // console.log(place.SpotImages);
   // essential step to allow loading or code will execute too early and display nonething
-  if (!Object.keys(place).length) {
+  if (!Object.keys(spotInfo).length) {
     return (
       <i className="fa-solid fa-truck-ramp-box spot-info-loading">LOADING...</i>
     )
@@ -72,28 +80,28 @@ function SpotInfo() {
 
       <div className="py-4 px-8 flex flex-col min-h-screen max-w-4xl mx-auto">
         <div className="mt-4 bg-gray-100 -mx-8 px-8 pt-8">
-          <h1 className="text-3xl">{place.name}</h1>
-          <h3 className="text-2xl">{place.address}</h3>
-          <SpotGallery place={place} />
+          <h1 className="text-3xl">{spotInfo.name}</h1>
+          <h3 className="text-2xl">{spotInfo.address}</h3>
+          <SpotGallery place={spotInfo} />
           <div className="mt-8 mb-8 grid gap-8 grid-cols-1 md:grid-cols-[2fr_1fr]">
             <div>
               <div className="my-4">
                 <h2 className="font-semibold text-2xl">Description</h2>
-                {place.description}
+                {spotInfo.description}
               </div>
               Check-in: <br />
               Check-out: <br />
               Number of guests: <br />
             </div>
             <div>
-              <BookingsWidget place={place} />
+              <BookingsWidget place={spotInfo} />
             </div>
           </div>
           <div className="bg-white -mx-8 px-8 py-8 border-t">
             <div>
               <h2 className="font-semibold text-2xl">Average Rating</h2>
             </div>
-            <div className="mb-4 mt-2 text-sm text-gray-700 leading-5">{place.avgStarRating}</div>
+            <div className="mb-4 mt-2 text-sm text-gray-700 leading-5">{spotInfo.avgStarRating}</div>
           </div>
         </div>
       </div>

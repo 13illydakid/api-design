@@ -10,28 +10,19 @@ import SpotInfo from "./components/SpotInfo";
 import CreateSpotForm from "./components/CreateSpotForm"
 import ManageSpots from "./components/ManageSpots";
 import UpdateSpotForm from "./components/UpdateSpotForm";
+import SpotsFormPage from "./components/SpotsFormPage";
 import ScrollToTop from "./ScrollToTop";
-// import categories from "./components/Category";
-// import "./components/Category/index.css"
+import Footer from "./components/Footer";
 
 import "./index.css";
 import { categories } from "./components/Category/CategoriesList";
 import Categorie from "./components/Category";
 
 
-const support = [
-  "Support", "Help Center", "DormCover", "Anti-discrimination", "Disability support", "Cancellation options", "Report neighborhood concern"
-]
-const hosting = [
-  "Hosting", "Dormbnb your home", "DormCover for Hosts", "Hosting resources", "Community forum", "Hosting responsibility", "Dormbnb-friendly apartments"
-]
-const airbnb = [
-  "Dormbnb", "Newsroom", "New features", "Careers", "Investors", "Gift cards", "Dormbnb.org emergency stays"
-]
-
-
-axios.defaults.baseURL = 'http://localhost:3000';
-axios.defaults.withCredentials = false;
+// axios.defaults.baseURL = 'postgres://default:XBy6wI9ibYcH@ep-bitter-feather-72486321.us-west-2.postgres.vercel-storage.com:5432/verceldb';
+// axios.defaults.baseURL = '../../../backend/routes/api';
+axios.defaults.baseURL = 'http://localhost:4000';
+axios.defaults.withCredentials = true;
 
 
 function App() {
@@ -64,6 +55,7 @@ function App() {
           <Route exact path='/spot/createSpotForm'>
             <ScrollToTop />
             <CreateSpotForm />
+            <SpotsFormPage />
           </Route>
           <Route exact path='/spot/:spotId/updateSpotForm'>
             <ScrollToTop />
@@ -80,70 +72,7 @@ function App() {
         </Switch>
       )}
 
-      <div className="break-line">
-        <hr />
-      </div>
-
-      <div className="footer-background">
-
-        <div className="footer-container">
-          <div className="footer-info">
-            {support.map((data, i) => {
-              if (i === 0) {
-                return (
-                  <span className="footer-text-1">
-                    {data}
-                  </span>
-                )
-              } else {
-                return (
-                  <span className="footer-text">
-                    {data}
-                  </span>
-                )
-              }
-            })}
-          </div>
-          <div className="footer-info">
-            {hosting.map((data, i) => {
-              if (i === 0) {
-                return (
-                  <span className="footer-text-1">
-                    {data}
-                  </span>
-                )
-              } else {
-                return (
-                  <span className="footer-text">
-                    {data}
-                  </span>
-                )
-              }
-            })}
-          </div>
-          <div className="footer-info">
-            {airbnb.map((data, i) => {
-              if (i === 0) {
-                return (
-                  <span className="footer-text-1">
-                    {data}
-                  </span>
-                )
-              } else {
-                return (
-                  <span className="footer-text">
-                    {data}
-                  </span>
-                )
-              }
-            })}
-          </div>
-        </div>
-      <div className="break-line-bottom">
-        <hr />
-      </div>
-      </div>
-
+      <Footer />
 
     </>
   );

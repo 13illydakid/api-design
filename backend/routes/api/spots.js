@@ -283,10 +283,6 @@ router.get('/:spotId', checkSpot, async (req, res, next) => {
         }
     });
 
-
-    //spotInfo.numReviews = count;
-
-
     spotInfo.numReviews = totalReviews;
 
     let totalStars = await Review.sum('stars', {
@@ -295,17 +291,11 @@ router.get('/:spotId', checkSpot, async (req, res, next) => {
         }
     });
 
-    // console.log("sffsdffsdfsff", typeof(spotInfo.numReviews))
-    // console.log("sffsdffsdfsff", typeof(totalStars));
-    // console.log("sffsdffsdfsff", typeof(totalReviews));
-
     if (Number(totalStars) / Number(totalReviews)) {
         spotInfo.avgStarRating = Number(totalStars) / Number(totalReviews);
     } else {
         spotInfo.avgStarRating = "No current ratings";
     };
-
-    // console.log("sffsdffsdfsff", typeof(spotInfo.avgStarRating));
 
     let spotImages = await SpotImage.findAll({
         where: {
@@ -314,15 +304,11 @@ router.get('/:spotId', checkSpot, async (req, res, next) => {
         attributes: ['id', 'url', 'preview']
     });
 
-
-    //console.log(spotImages.length);
-
     if (spotImages.length > 0) {
         spotInfo.SpotImages = spotImages;
     } else {
         spotInfo.SpotImages = [{url: "There are no images for this spot"}]
     };
-
 
     spotInfo.Owner = await User.findByPk(spotInfo.ownerId, {
         attributes: ['id', 'firstName', 'lastName']
@@ -380,7 +366,10 @@ router.post('/:spotId/images', requireAuth, checkSpot, checkSpotBelongsToUser, s
         url: spotImage.url,
         preview: spotImage.preview
     });
-})
+});
+
+
+
 
 //Edit a Spot based on spotId - URL: /api/spots/:spotId
 router.put('/:spotId', requireAuth, checkSpot, checkSpotBelongsToUser, spotCheckValidator, async (req, res, next) => {

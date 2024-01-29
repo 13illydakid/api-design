@@ -45,7 +45,9 @@ app.use(
 );
 
 const routes = require('./routes');
+// const multer = require("multer");
 app.use(routes); // Connect all the routes
+// app.use('../../frontend/public/images', express.static(__dirname + '../../frontend/public/images'));
 
 // Catch unhandled requests and forward to error handler.
 app.use((_req, _res, next) => {
@@ -82,5 +84,6 @@ app.use((err, _req, res, _next) => {
     // stack: isProduction ? null : err.stack
   });
 });
+
 
 module.exports = app;

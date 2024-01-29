@@ -55,6 +55,8 @@ function SignupFormModal() {
 
   return (
     <>
+      {/* <div className="fixed top-0 bottom-0 left-0 right-0" onClick={closeModal}>
+      </div> */}
       <span className="flex justify-end">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 hover:bg-black rounded-lg hover:text-white cursor-pointer" onClick={closeModal}>
           <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />

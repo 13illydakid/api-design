@@ -4,13 +4,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
-import { ModalProvider, Modal } from './context/Modal';
-import App from './App';
+import { ModalProvider, Modal } from './context/Modal.js';
+import App from './App.js';
 // import { disableReactDevTools } from '@fvilers/disable-react-devtools';
 
-import configureStore from './store';
-import { restoreCSRF, csrfFetch } from "./store/csrf";
-import * as sessionActions from './store/session';
+import configureStore from './store/index.js';
+import { restoreCSRF, csrfFetch } from "./store/csrf.js";
+import * as sessionActions from './store/session.js';
 
 const store = configureStore();
 
