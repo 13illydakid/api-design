@@ -71,12 +71,12 @@ function CreateSpotForm() {
     if (Object.keys(allErrors).length) return setErrors(allErrors);
 
     const newSpot = {
+      name,
       address,
+      description,
       city,
       state,
       country,
-      name,
-      description,
       price
     };
 

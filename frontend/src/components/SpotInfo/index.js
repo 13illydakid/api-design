@@ -3,7 +3,7 @@ import { thunkGetAllSpotReviews } from '../../store/reviews';
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-import axios from "axios";
+// import axios from "axios";
 // import OpenModalMenuItem from '../Navigation/OpenModalMenuItem';
 import OpenModalMenuItem from '../OpenModalButton';
 import './SpotInfo.css';
@@ -29,7 +29,7 @@ function SpotInfo() {
   // const allSpotReviews = useSelector(state => state.reviews.spot);
   // const allSpotReviewsArray = Object.values(allSpotReviews);
   // const allReviewsUserIdsArray = allSpotReviewsArray.map(review => review.User.id)
-  const [place, setPlace] = useState(null);
+  // const [place, setPlace] = useState(null);
 
   useEffect(() => {
     // if(!spotId){

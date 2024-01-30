@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Image from "../Image";
 
 
 function SpotGallery({ place }) {
@@ -21,7 +22,7 @@ function SpotGallery({ place }) {
           {place?.SpotImages?.length > 0 && place.SpotImages.map(photo => (
             <span>
               {/* <img src={photo.url} alt="" height="auto" width="auto"/> */}
-              <img src={photo.url} alt="" className="max-w-5xl object-scale-down flex justify-between" />
+              <Image src={photo.url} alt="" className="max-w-5xl object-scale-down flex justify-between" />
             </span>
           ))}
         </div>
@@ -35,17 +36,17 @@ function SpotGallery({ place }) {
         <div>
           {place.SpotImages?.[0] && (
             <div>
-              <img onClick={() => setShowAllPhotos(true)} className="aspect-square cursor-pointer object-cover" src={place.SpotImages[0].url} alt="" />
+              <Image onClick={() => setShowAllPhotos(true)} className="aspect-square cursor-pointer object-cover" src={place.SpotImages[0].url} alt="" />
             </div>
           )}
         </div>
         <div className="grid">
           {place.SpotImages?.[1] && (
-            <img onClick={() => setShowAllPhotos(true)} className="aspect-square cursor-pointer object-cover" src={place.SpotImages[1].url} alt="" />
+            <Image onClick={() => setShowAllPhotos(true)} className="aspect-square cursor-pointer object-cover" src={place.SpotImages[1].url} alt="" />
           )}
           <div className="overflow-hidden">
             {place.SpotImages?.[2] && (
-              <img onClick={() => setShowAllPhotos(true)} className="aspect-square cursor-pointer object-cover relative top-2" src={place.SpotImages[2].url} alt="" />
+              <Image onClick={() => setShowAllPhotos(true)} className="aspect-square cursor-pointer object-cover relative top-2" src={place.SpotImages[2].url} alt="" />
             )}
           </div>
         </div>

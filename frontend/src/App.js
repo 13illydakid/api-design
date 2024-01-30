@@ -54,8 +54,8 @@ function App() {
           </Route>
           <Route exact path='/spot/createSpotForm'>
             <ScrollToTop />
-            <CreateSpotForm />
             <SpotsFormPage />
+            {/* <CreateSpotForm /> */}
           </Route>
           <Route exact path='/spot/:spotId/updateSpotForm'>
             <ScrollToTop />
